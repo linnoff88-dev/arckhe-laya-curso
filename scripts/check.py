@@ -10,11 +10,11 @@ class Page(HTMLParser):
  def handle_starttag(self,tag,attrs):
   a=dict(attrs)
   if 'id' in a:self.ids.append(a['id'])
-  if 'data-inema-topic' in a:self.topics.append(a['data-inema-topic'])
+  if 'data-ARCKHÉ-topic' in a:self.topics.append(a['data-ARCKHÉ-topic'])
   if tag=='svg' and a.get('role')=='img':self.svgs+=1
   for name in ['href','src']:
    if a.get(name):self.links.append(a[name])
-  if tag=='script' and 'data-inema-manifest' in a:self.reading=True
+  if tag=='script' and 'data-ARCKHÉ-manifest' in a:self.reading=True
  def handle_data(self,data):
   if self.reading:self.manifest+=data
  def handle_endtag(self,tag):

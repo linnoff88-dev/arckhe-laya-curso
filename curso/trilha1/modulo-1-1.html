@@ -4,11 +4,11 @@
 <script>(function () {
   try {
     var html = document.documentElement;
-    var DEF = { theme: 'inema-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+    var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
     function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
     var p = clone(DEF);
     try {
-      var raw = localStorage.getItem('inema.prefs');
+      var raw = localStorage.getItem('ARCKHÉ.prefs');
       if (raw) {
         var parsed = JSON.parse(raw);
         if (parsed && typeof parsed === 'object') {
@@ -18,19 +18,19 @@
         // fallback ao tema legado do v1
         var legacy = localStorage.getItem('theme');
         if (legacy === 'light') p.theme = 'claro';
-        else if (legacy === 'dark') p.theme = 'inema-dark';
+        else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
       }
     } catch (e) { p = clone(DEF); }
 
     // mapa tema -> (.dark on/off, data-theme, color-scheme)
     var THEMES = {
-      'inema-dark': { dark: true,  attr: null,        cs: 'dark'  },
+      'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
       'claro':      { dark: false, attr: null,        cs: 'light' },
       'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
       'foco':       { dark: null,  attr: 'foco',      cs: null    },  // herda eixo atual
       'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
     };
-    var t = THEMES[p.theme] || THEMES['inema-dark'];
+    var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
 
     if (t.dark === true) html.classList.add('dark');
     else if (t.dark === false) html.classList.remove('dark');
@@ -47,7 +47,7 @@
     // variaveis de leitura (espelham learn.js / learn.css) ANTES do paint
     var s = html.style;
     var scale = (+p.fontScale || 100);
-    s.setProperty('--inema-font-scale', (scale / 100).toString());
+    s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
     s.setProperty('font-size', scale + '%');               // :root em %, nunca px
     s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
     s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -75,57 +75,57 @@
 </script>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<meta content="laya-curso" name="inema-course"/>
+<meta content="laya-curso" name="ARCKHÉ-course"/>
 <meta content="Curso prático de Laya e Jev: decisões estruturadas, inferência local, triagem em português e avaliaçêo crítica." name="description"/>
-<title>Decidir nêo é conversar | Laya &amp; Jev · INEMA</title>
-<script data-inema-manifest="" type="application/json">{"course": "laya-curso", "tracks": [{"n": "1", "title": "Fundamentos", "modules": [{"id": "1-1", "title": "Decidir nêo é conversar", "topics": 6, "href": "curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "As três primitivas", "topics": 6, "href": "curso/trilha1/modulo-1-2.html"}]}, {"n": "2", "title": "Motor local", "modules": [{"id": "2-1", "title": "Instalaçêo e primeira inferência", "topics": 6, "href": "curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Router, contexto e processamento", "topics": 6, "href": "curso/trilha2/modulo-2-2.html"}]}, {"n": "3", "title": "Aplicaçêo prática", "modules": [{"id": "3-1", "title": "Mesa de triagem em português", "topics": 6, "href": "curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "Integraçêo com agentes e processos", "topics": 6, "href": "curso/trilha3/modulo-3-2.html"}]}, {"n": "4", "title": "Qualidade e evoluçêo", "modules": [{"id": "4-1", "title": "Benchmarks, calibraçêo e avaliaçêo", "topics": 6, "href": "curso/trilha4/modulo-4-1.html"}, {"id": "4-2", "title": "Especializaçêo e projeto final", "topics": 6, "href": "curso/trilha4/modulo-4-2.html"}]}]}</script>
+<title>Decidir nêo é conversar | Laya &amp; Jev · ARCKHÉ</title>
+<script data-ARCKHÉ-manifest="" type="application/json">{"course": "laya-curso", "tracks": [{"n": "1", "title": "Fundamentos", "modules": [{"id": "1-1", "title": "Decidir nêo é conversar", "topics": 6, "href": "curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "As três primitivas", "topics": 6, "href": "curso/trilha1/modulo-1-2.html"}]}, {"n": "2", "title": "Motor local", "modules": [{"id": "2-1", "title": "Instalaçêo e primeira inferência", "topics": 6, "href": "curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Router, contexto e processamento", "topics": 6, "href": "curso/trilha2/modulo-2-2.html"}]}, {"n": "3", "title": "Aplicaçêo prática", "modules": [{"id": "3-1", "title": "Mesa de triagem em português", "topics": 6, "href": "curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "Integraçêo com agentes e processos", "topics": 6, "href": "curso/trilha3/modulo-3-2.html"}]}, {"n": "4", "title": "Qualidade e evoluçêo", "modules": [{"id": "4-1", "title": "Benchmarks, calibraçêo e avaliaçêo", "topics": 6, "href": "curso/trilha4/modulo-4-1.html"}, {"id": "4-2", "title": "Especializaçêo e projeto final", "topics": 6, "href": "curso/trilha4/modulo-4-2.html"}]}]}</script>
 <link href="../../assets/course.css?v=1.1.0" rel="stylesheet"/>
 <link href="../../assets/learn.css" rel="stylesheet"/>
 <style>:root{--track:#34d399}</style>
-<link href="https://inematds.github.io/laya-curso/curso/trilha1/modulo-1-1.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/laya-curso/en/curso/trilha1/modulo-1-1.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/laya-curso/es/curso/trilha1/modulo-1-1.html" hreflang="es" rel="alternate"/><link href="https://inematds.github.io/laya-curso/curso/trilha1/modulo-1-1.html" hreflang="x-default" rel="alternate"/><link href="https://inematds.github.io/laya-curso/curso/trilha1/modulo-1-1.html" rel="canonical"/><style id="course-language-css">[data-course-languages]{position:fixed;bottom:0;left:0;right:0;z-index:60;display:flex;gap:1.25rem;padding:.65rem;justify-content:center;background:#111827;color:#f3f4f6}[data-course-languages] a{color:inherit;font:14px system-ui}[data-course-languages] [aria-current]{font-weight:bold;text-decoration:underline}[data-course-languages] a:focus-visible{outline:2px solid #38bdf8;outline-offset:4px}body{padding-bottom:75px}</style></head>
+<link href="https://linnoff88-dev.github.io/arckhe-/curso/trilha1/modulo-1-1.html" hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/en/curso/trilha1/modulo-1-1.html" hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/es/curso/trilha1/modulo-1-1.html" hreflang="es" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/curso/trilha1/modulo-1-1.html" hreflang="x-default" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/curso/trilha1/modulo-1-1.html" rel="canonical"/><style id="course-language-css">[data-course-languages]{position:fixed;bottom:0;left:0;right:0;z-index:60;display:flex;gap:1.25rem;padding:.65rem;justify-content:center;background:#111827;color:#f3f4f6}[data-course-languages] a{color:inherit;font:14px system-ui}[data-course-languages] [aria-current]{font-weight:bold;text-decoration:underline}[data-course-languages] a:focus-visible{outline:2px solid #38bdf8;outline-offset:4px}body{padding-bottom:75px}</style></head>
 <body class="bg-dark-900 text-neutral-100">
 <a class="skip" href="#conteudo">Pular para conteúdo</a>
 <nav class="nav bg-dark-900 border-dark-600">
 <div class="nav-inner">
 <a class="brand" href="../../index.html">◈ LAYA</a>
-<a class="text-sky-400" href="https://inema.club" rel="noopener" target="_blank">INEMA.CLUB</a>
-<a href="https://inema.pro" rel="noopener" target="_blank">PRO</a>
+<a class="text-sky-400" href="https://ARCKHÉ AI" rel="noopener" target="_blank">ARCKHÉ AI</a>
+<a href="https://ARCKHÉ.pro" rel="noopener" target="_blank">PRO</a>
 <div class="nav-tracks">
 <a class="track-link active" href="../../curso/trilha1/index.html">T1 · Fundamentos</a>
 <a class="track-link" href="../../curso/trilha2/index.html">T2 · Motor local</a>
 <a class="track-link" href="../../curso/trilha3/index.html">T3 · Aplicaçêo prática</a>
 <a class="track-link" href="../../curso/trilha4/index.html">T4 · Qualidade e evoluçêo</a>
 </div>
-<button aria-label="Alternar claro e escuro" id="theme-toggle" onclick="INEMA.setPref('theme',document.documentElement.classList.contains('dark')?'claro':'inema-dark')">☀ / ☾</button>
+<button aria-label="Alternar claro e escuro" id="theme-toggle" onclick="ARCKHÉ.setPref('theme',document.documentElement.classList.contains('dark')?'claro':'ARCKHÉ-dark')">☀ / ☾</button>
 </div>
 </nav>
-<main class="wrap" data-inema-track="1" id="conteudo">
+<main class="wrap" data-ARCKHÉ-track="1" id="conteudo">
 <div class="toolbar">
-<button data-inema-journey-open="">Minha jornada</button>
-<button onclick="INEMA.resume()">Continuar de onde parei</button>
-<button aria-expanded="false" data-inema-appearance-toggle="#appearance">Aparência e leitura</button>
+<button data-ARCKHÉ-journey-open="">Minha jornada</button>
+<button onclick="ARCKHÉ.resume()">Continuar de onde parei</button>
+<button aria-expanded="false" data-ARCKHÉ-appearance-toggle="#appearance">Aparência e leitura</button>
 </div>
-<div data-inema-appearance="" data-open="false" id="appearance">
+<div data-ARCKHÉ-appearance="" data-open="false" id="appearance">
 <strong>Seu conforto de leitura</strong>
 <div class="toolbar">
-<button data-inema-set-theme="inema-dark">Escuro</button>
-<button data-inema-set-theme="claro">Claro</button>
-<button data-inema-set-theme="sepia">Sépia</button>
-<button data-inema-set-theme="foco">Foco</button>
-<button data-inema-set-theme="contraste">Alto contraste</button>
+<button data-ARCKHÉ-set-theme="ARCKHÉ-dark">Escuro</button>
+<button data-ARCKHÉ-set-theme="claro">Claro</button>
+<button data-ARCKHÉ-set-theme="sepia">Sépia</button>
+<button data-ARCKHÉ-set-theme="foco">Foco</button>
+<button data-ARCKHÉ-set-theme="contraste">Alto contraste</button>
 </div>
 <div class="toolbar">
-<button data-inema-set-fontscale="100">Fonte 100%</button>
-<button data-inema-set-fontscale="112">Fonte 112%</button>
-<button data-inema-set-fontscale="125">Fonte 125%</button>
-<button data-inema-set-leading="1.45">Entrelinha compacta</button>
-<button data-inema-set-leading="1.7">Entrelinha confortável</button>
-<button data-inema-set-linewidth="60">Coluna curta</button>
-<button data-inema-set-linewidth="75">Coluna larga</button>
-<button data-inema-set-font="system">Fonte sistema</button>
-<button data-inema-set-font="leitura">Fonte de leitura</button>
-<button data-inema-set-accent="amber">Acento âmbar</button>
-<button data-inema-set-accent="blue">Acento azul</button>
+<button data-ARCKHÉ-set-fontscale="100">Fonte 100%</button>
+<button data-ARCKHÉ-set-fontscale="112">Fonte 112%</button>
+<button data-ARCKHÉ-set-fontscale="125">Fonte 125%</button>
+<button data-ARCKHÉ-set-leading="1.45">Entrelinha compacta</button>
+<button data-ARCKHÉ-set-leading="1.7">Entrelinha confortável</button>
+<button data-ARCKHÉ-set-linewidth="60">Coluna curta</button>
+<button data-ARCKHÉ-set-linewidth="75">Coluna larga</button>
+<button data-ARCKHÉ-set-font="system">Fonte sistema</button>
+<button data-ARCKHÉ-set-font="leitura">Fonte de leitura</button>
+<button data-ARCKHÉ-set-accent="amber">Acento âmbar</button>
+<button data-ARCKHÉ-set-accent="blue">Acento azul</button>
 </div>
 </div>
 <div class="breadcrumb">
@@ -165,22 +165,22 @@
 <rect fill="#111827" height="88" rx="12" stroke="#34d399" stroke-width="2" width="220" x="520" y="48"></rect>
 <text fill="#e5e7eb" font-size="18" font-weight="600" text-anchor="middle" x="630" y="98">Revisêo</text>
 </g>
-<text fill="#cbd5e1" font-size="12" text-anchor="middle" x="380" y="166">LAYA / INEMA · fluxo conceitual</text>
+<text fill="#cbd5e1" font-size="12" text-anchor="middle" x="380" y="166">LAYA / ARCKHÉ · fluxo conceitual</text>
 </svg>
 </div>
-<div aria-label="Progresso" class="meter" data-inema-meter="modulo:1-1">
-<span>Seu progresso</span> <span data-inema-meter-frac="">
+<div aria-label="Progresso" class="meter" data-ARCKHÉ-meter="modulo:1-1">
+<span>Seu progresso</span> <span data-ARCKHÉ-meter-frac="">
 </span>
-<div class="inema-bar">
-<div class="inema-bar__fill" data-inema-meter-fill="">
+<div class="ARCKHÉ-bar">
+<div class="ARCKHÉ-bar__fill" data-ARCKHÉ-meter-fill="">
 </div>
 </div>
 </div>
-<div aria-label="Progresso" class="meter" data-inema-meter="curso">
-<span>Seu progresso</span> <span data-inema-meter-frac="">
+<div aria-label="Progresso" class="meter" data-ARCKHÉ-meter="curso">
+<span>Seu progresso</span> <span data-ARCKHÉ-meter-frac="">
 </span>
-<div class="inema-bar">
-<div class="inema-bar__fill" data-inema-meter-fill="">
+<div class="ARCKHÉ-bar">
+<div class="ARCKHÉ-bar__fill" data-ARCKHÉ-meter-fill="">
 </div>
 </div>
 </div>
@@ -204,20 +204,20 @@
 <a href="#topico-6">Desenhe o primeiro caso de uso</a>
 </li>
 </ol>
-<section class="topic" data-inema-module="1-1" data-inema-topic="modulo-1-1#topico-1" id="topico-1">
+<section class="topic" data-ARCKHÉ-module="1-1" data-ARCKHÉ-topic="modulo-1-1#topico-1" id="topico-1">
 <div class="topic-heading">
 <span class="circle">1</span>
 <h2 class="text-2xl font-bold">Uma decisêo tem um espaço de respostas</h2>
 </div>
-<div class="inema-prose">
+<div class="ARCKHÉ-prose">
 <h3>O que é</h3>
-<p data-inema-block="modulo-1-1-t1-what">Um motor de decisêo recebe um estado e escolhe dentro de um conjunto definido. Em um ticket, o estado pode ser assunto e mensagem; a saída pode ser financeiro, suporte, vendas ou outros. O trabalho começa ao definir o que essas categorias significam e quem receberá cada caso. A previsêo nêo inclui uma explicaçêo longa nem executa o atendimento.</p>
+<p data-ARCKHÉ-block="modulo-1-1-t1-what">Um motor de decisêo recebe um estado e escolhe dentro de um conjunto definido. Em um ticket, o estado pode ser assunto e mensagem; a saída pode ser financeiro, suporte, vendas ou outros. O trabalho começa ao definir o que essas categorias significam e quem receberá cada caso. A previsêo nêo inclui uma explicaçêo longa nem executa o atendimento.</p>
 <h3>Por que aprender</h3>
-<p data-inema-block="modulo-1-1-t1-why">Categorias sobrepostas tornam o rótulo ambíguo antes mesmo de envolver IA. Defina uma regra para pedidos que misturam cobrança e falha técnica. A equipe precisa concordar com o resultado esperado para poder medir acertos depois.</p>
+<p data-ARCKHÉ-block="modulo-1-1-t1-why">Categorias sobrepostas tornam o rótulo ambíguo antes mesmo de envolver IA. Defina uma regra para pedidos que misturam cobrança e falha técnica. A equipe precisa concordar com o resultado esperado para poder medir acertos depois.</p>
 </div>
 <div class="example">
 <strong>Exemplo aplicado</strong>
-<p data-inema-block="modulo-1-1-t1-example">O cliente pede estorno de uma cobrança duplicada: departamento financeiro é uma recomendaçêo; devolver dinheiro é outra operaçêo.</p>
+<p data-ARCKHÉ-block="modulo-1-1-t1-example">O cliente pede estorno de uma cobrança duplicada: departamento financeiro é uma recomendaçêo; devolver dinheiro é outra operaçêo.</p>
 </div>
 <div class="comparison">
 <div class="yes bg-emerald-900/20">
@@ -258,24 +258,24 @@
 </details>
 </div>
 <div class="toolbar">
-<button aria-pressed="false" class="justify-start" data-inema-read-toggle="">Marcar como lido</button>
-<button aria-pressed="false" class="justify-start" data-inema-doubt-toggle="">Tenho uma dúvida</button>
+<button aria-pressed="false" class="justify-start" data-ARCKHÉ-read-toggle="">Marcar como lido</button>
+<button aria-pressed="false" class="justify-start" data-ARCKHÉ-doubt-toggle="">Tenho uma dúvida</button>
 </div>
 </section>
-<section class="topic" data-inema-module="1-1" data-inema-topic="modulo-1-1#topico-2" id="topico-2">
+<section class="topic" data-ARCKHÉ-module="1-1" data-ARCKHÉ-topic="modulo-1-1#topico-2" id="topico-2">
 <div class="topic-heading">
 <span class="circle">2</span>
 <h2 class="text-2xl font-bold">System 1 e System 2</h2>
 </div>
-<div class="inema-prose">
+<div class="ARCKHÉ-prose">
 <h3>O que é</h3>
-<p data-inema-block="modulo-1-1-t2-what">System 1 é uma analogia para decisões rápidas e delimitadas; System 2 representa tarefas que exigem elaboraçêo, planejamento ou geraçêo. Nêo sêo diagnósticos sobre consciência do modelo. Um classificador pode escolher o setor de atendimento enquanto um modelo generativo redige uma resposta com os fatos já conferidos.</p>
+<p data-ARCKHÉ-block="modulo-1-1-t2-what">System 1 é uma analogia para decisões rápidas e delimitadas; System 2 representa tarefas que exigem elaboraçêo, planejamento ou geraçêo. Nêo sêo diagnósticos sobre consciência do modelo. Um classificador pode escolher o setor de atendimento enquanto um modelo generativo redige uma resposta com os fatos já conferidos.</p>
 <h3>Por que aprender</h3>
-<p data-inema-block="modulo-1-1-t2-why">Separar etapas permite medir custo e erro de cada uma. Se a classificaçêo falhar, você sabe qual parte investigar. Um sistema composto também pode pular o modelo quando uma regra determinística já resolve o caso com segurança.</p>
+<p data-ARCKHÉ-block="modulo-1-1-t2-why">Separar etapas permite medir custo e erro de cada uma. Se a classificaçêo falhar, você sabe qual parte investigar. Um sistema composto também pode pular o modelo quando uma regra determinística já resolve o caso com segurança.</p>
 </div>
 <div class="example">
 <strong>Exemplo aplicado</strong>
-<p data-inema-block="modulo-1-1-t2-example">Evento recebido → classificaçêo do setor → revisêo do atendente → elaboraçêo de resposta.</p>
+<p data-ARCKHÉ-block="modulo-1-1-t2-example">Evento recebido → classificaçêo do setor → revisêo do atendente → elaboraçêo de resposta.</p>
 </div>
 <ol class="timeline">
 <li>
@@ -328,24 +328,24 @@
 </details>
 </div>
 <div class="toolbar">
-<button aria-pressed="false" class="justify-start" data-inema-read-toggle="">Marcar como lido</button>
-<button aria-pressed="false" class="justify-start" data-inema-doubt-toggle="">Tenho uma dúvida</button>
+<button aria-pressed="false" class="justify-start" data-ARCKHÉ-read-toggle="">Marcar como lido</button>
+<button aria-pressed="false" class="justify-start" data-ARCKHÉ-doubt-toggle="">Tenho uma dúvida</button>
 </div>
 </section>
-<section class="topic" data-inema-module="1-1" data-inema-topic="modulo-1-1#topico-3" id="topico-3">
+<section class="topic" data-ARCKHÉ-module="1-1" data-ARCKHÉ-topic="modulo-1-1#topico-3" id="topico-3">
 <div class="topic-heading">
 <span class="circle">3</span>
 <h2 class="text-2xl font-bold">O significado de nêo autoregressivo</h2>
 </div>
-<div class="inema-prose">
+<div class="ARCKHÉ-prose">
 <h3>O que é</h3>
-<p data-inema-block="modulo-1-1-t3-what">Na inferência do Laya, um encoder processa a sequência e calcula valores para as opções. Ele nêo escreve a resposta token por token. O SDK converte esses valores em campos estruturados. Várias perguntas sobre o mesmo estado sêo organizadas em um lote para uma chamada ao modelo.</p>
+<p data-ARCKHÉ-block="modulo-1-1-t3-what">Na inferência do Laya, um encoder processa a sequência e calcula valores para as opções. Ele nêo escreve a resposta token por token. O SDK converte esses valores em campos estruturados. Várias perguntas sobre o mesmo estado sêo organizadas em um lote para uma chamada ao modelo.</p>
 <h3>Por que aprender</h3>
-<p data-inema-block="modulo-1-1-t3-why">Um forward pass nêo significa custo constante. Mais perguntas, mais tokens e mais opções aumentam o trabalho e a memória. A ausência de texto livre reduz problemas de formataçêo, mas continua permitindo erros de classificaçêo e distribuições mal calibradas.</p>
+<p data-ARCKHÉ-block="modulo-1-1-t3-why">Um forward pass nêo significa custo constante. Mais perguntas, mais tokens e mais opções aumentam o trabalho e a memória. A ausência de texto livre reduz problemas de formataçêo, mas continua permitindo erros de classificaçêo e distribuições mal calibradas.</p>
 </div>
 <div class="example">
 <strong>Exemplo aplicado</strong>
-<p data-inema-block="modulo-1-1-t3-example">Quatro perguntas geram quatro sequências no lote: departamento, urgência, cancelamento e reembolso.</p>
+<p data-ARCKHÉ-block="modulo-1-1-t3-example">Quatro perguntas geram quatro sequências no lote: departamento, urgência, cancelamento e reembolso.</p>
 </div>
 <aside class="tip bg-primary/10 border-primary/30">
 <h3>Dica prática</h3>
@@ -388,24 +388,24 @@
 </details>
 </div>
 <div class="toolbar">
-<button aria-pressed="false" class="justify-start" data-inema-read-toggle="">Marcar como lido</button>
-<button aria-pressed="false" class="justify-start" data-inema-doubt-toggle="">Tenho uma dúvida</button>
+<button aria-pressed="false" class="justify-start" data-ARCKHÉ-read-toggle="">Marcar como lido</button>
+<button aria-pressed="false" class="justify-start" data-ARCKHÉ-doubt-toggle="">Tenho uma dúvida</button>
 </div>
 </section>
-<section class="topic" data-inema-module="1-1" data-inema-topic="modulo-1-1#topico-4" id="topico-4">
+<section class="topic" data-ARCKHÉ-module="1-1" data-ARCKHÉ-topic="modulo-1-1#topico-4" id="topico-4">
 <div class="topic-heading">
 <span class="circle">4</span>
 <h2 class="text-2xl font-bold">Jev e Laya no mesmo desenho</h2>
 </div>
-<div class="inema-prose">
+<div class="ARCKHÉ-prose">
 <h3>O que é</h3>
-<p data-inema-block="modulo-1-1-t4-what">Jev aparece nas fontes como serviço de decisões acessado por API. Laya disponibiliza código e checkpoints para execuçêo própria. A comparaçêo útil considera controle da infraestrutura, dados que saem da máquina, esforço de manutençêo e qualidade na tarefa pretendida. Um benchmark isolado nêo decide toda a arquitetura.</p>
+<p data-ARCKHÉ-block="modulo-1-1-t4-what">Jev aparece nas fontes como serviço de decisões acessado por API. Laya disponibiliza código e checkpoints para execuçêo própria. A comparaçêo útil considera controle da infraestrutura, dados que saem da máquina, esforço de manutençêo e qualidade na tarefa pretendida. Um benchmark isolado nêo decide toda a arquitetura.</p>
 <h3>Por que aprender</h3>
-<p data-inema-block="modulo-1-1-t4-why">Hospedar um modelo envolve tempo de instalaçêo, memória, energia, monitoramento e atualizaçêo. Nêo pagar por chamada ao fornecedor nêo elimina esses custos. A escolha por API pode reduzir esse trabalho, mas introduz dependência de disponibilidade, contrato e latência de rede.</p>
+<p data-ARCKHÉ-block="modulo-1-1-t4-why">Hospedar um modelo envolve tempo de instalaçêo, memória, energia, monitoramento e atualizaçêo. Nêo pagar por chamada ao fornecedor nêo elimina esses custos. A escolha por API pode reduzir esse trabalho, mas introduz dependência de disponibilidade, contrato e latência de rede.</p>
 </div>
 <div class="example">
 <strong>Exemplo aplicado</strong>
-<p data-inema-block="modulo-1-1-t4-example">Uma equipe com infraestrutura local pode avaliar Laya; outra pode priorizar um serviço gerenciado. Ambas precisam de exemplos rotulados.</p>
+<p data-ARCKHÉ-block="modulo-1-1-t4-example">Uma equipe com infraestrutura local pode avaliar Laya; outra pode priorizar um serviço gerenciado. Ambas precisam de exemplos rotulados.</p>
 </div>
 <div class="comparison">
 <div class="yes bg-emerald-900/20">
@@ -446,24 +446,24 @@
 </details>
 </div>
 <div class="toolbar">
-<button aria-pressed="false" class="justify-start" data-inema-read-toggle="">Marcar como lido</button>
-<button aria-pressed="false" class="justify-start" data-inema-doubt-toggle="">Tenho uma dúvida</button>
+<button aria-pressed="false" class="justify-start" data-ARCKHÉ-read-toggle="">Marcar como lido</button>
+<button aria-pressed="false" class="justify-start" data-ARCKHÉ-doubt-toggle="">Tenho uma dúvida</button>
 </div>
 </section>
-<section class="topic" data-inema-module="1-1" data-inema-topic="modulo-1-1#topico-5" id="topico-5">
+<section class="topic" data-ARCKHÉ-module="1-1" data-ARCKHÉ-topic="modulo-1-1#topico-5" id="topico-5">
 <div class="topic-heading">
 <span class="circle">5</span>
 <h2 class="text-2xl font-bold">A promessa das imagens e a evidência</h2>
 </div>
-<div class="inema-prose">
+<div class="ARCKHÉ-prose">
 <h3>O que é</h3>
-<p data-inema-block="modulo-1-1-t5-what">As imagens fornecidas apresentam uma narrativa de competiçêo, com frases como o fim dos LLMs e uma alternativa ainda mais rápida. Sêo peças visuais de divulgaçêo. Para aprender com elas, transforme cada promessa em uma hipótese que pode ser testada: melhor em qual tarefa, com quais entradas e em qual máquina?</p>
+<p data-ARCKHÉ-block="modulo-1-1-t5-what">As imagens fornecidas apresentam uma narrativa de competiçêo, com frases como o fim dos LLMs e uma alternativa ainda mais rápida. Sêo peças visuais de divulgaçêo. Para aprender com elas, transforme cada promessa em uma hipótese que pode ser testada: melhor em qual tarefa, com quais entradas e em qual máquina?</p>
 <h3>Por que aprender</h3>
-<p data-inema-block="modulo-1-1-t5-why">No curso, a imagem serve de referência editorial. As conclusões técnicas vêm do código, fichas dos checkpoints, relatórios e execuçêo local. Esse hábito evita converter um título chamativo em requisito de produçêo sem evidência.</p>
+<p data-ARCKHÉ-block="modulo-1-1-t5-why">No curso, a imagem serve de referência editorial. As conclusões técnicas vêm do código, fichas dos checkpoints, relatórios e execuçêo local. Esse hábito evita converter um título chamativo em requisito de produçêo sem evidência.</p>
 </div>
 <div class="example">
 <strong>Exemplo aplicado</strong>
-<p data-inema-block="modulo-1-1-t5-example">Hipótese verificável: no meu conjunto de tickets, a triagem local reduz o tempo de encaminhamento sem aumentar erros críticos.</p>
+<p data-ARCKHÉ-block="modulo-1-1-t5-example">Hipótese verificável: no meu conjunto de tickets, a triagem local reduz o tempo de encaminhamento sem aumentar erros críticos.</p>
 </div>
 <aside class="tip bg-primary/10 border-primary/30">
 <h3>Dica prática</h3>
@@ -497,24 +497,24 @@
 </details>
 </div>
 <div class="toolbar">
-<button aria-pressed="false" class="justify-start" data-inema-read-toggle="">Marcar como lido</button>
-<button aria-pressed="false" class="justify-start" data-inema-doubt-toggle="">Tenho uma dúvida</button>
+<button aria-pressed="false" class="justify-start" data-ARCKHÉ-read-toggle="">Marcar como lido</button>
+<button aria-pressed="false" class="justify-start" data-ARCKHÉ-doubt-toggle="">Tenho uma dúvida</button>
 </div>
 </section>
-<section class="topic" data-inema-module="1-1" data-inema-topic="modulo-1-1#topico-6" id="topico-6">
+<section class="topic" data-ARCKHÉ-module="1-1" data-ARCKHÉ-topic="modulo-1-1#topico-6" id="topico-6">
 <div class="topic-heading">
 <span class="circle">6</span>
 <h2 class="text-2xl font-bold">Desenhe o primeiro caso de uso</h2>
 </div>
-<div class="inema-prose">
+<div class="ARCKHÉ-prose">
 <h3>O que é</h3>
-<p data-inema-block="modulo-1-1-t6-what">O projeto deste curso é uma mesa de triagem em português. Ela aceita mensagem e assunto, devolve quatro sinais e recomenda revisêo humana. Esse escopo é pequeno o bastante para investigar os erros e próximo de uma rotina real. Nêo envolve credenciais de pagamento, envio de e-mail ou execuçêo autônoma.</p>
+<p data-ARCKHÉ-block="modulo-1-1-t6-what">O projeto deste curso é uma mesa de triagem em português. Ela aceita mensagem e assunto, devolve quatro sinais e recomenda revisêo humana. Esse escopo é pequeno o bastante para investigar os erros e próximo de uma rotina real. Nêo envolve credenciais de pagamento, envio de e-mail ou execuçêo autônoma.</p>
 <h3>Por que aprender</h3>
-<p data-inema-block="modulo-1-1-t6-why">Antes de instalar, escreva a entrada mínima, as categorias, o significado da urgência e quem decide o encaminhamento final. Faça uma tabela de exemplos bons, ambíguos e fora do domínio. Esses casos virarêo testes e revelarêo dúvidas no esquema.</p>
+<p data-ARCKHÉ-block="modulo-1-1-t6-why">Antes de instalar, escreva a entrada mínima, as categorias, o significado da urgência e quem decide o encaminhamento final. Faça uma tabela de exemplos bons, ambíguos e fora do domínio. Esses casos virarêo testes e revelarêo dúvidas no esquema.</p>
 </div>
 <div class="example">
 <strong>Exemplo aplicado</strong>
-<p data-inema-block="modulo-1-1-t6-example">Entrada: cobrança duplicada. Saída: billing, urgência estimada, sinais de cancelamento e reembolso. Responsável final: atendente.</p>
+<p data-ARCKHÉ-block="modulo-1-1-t6-example">Entrada: cobrança duplicada. Saída: billing, urgência estimada, sinais de cancelamento e reembolso. Responsável final: atendente.</p>
 </div>
 <h3>Conceitos-chave</h3>
 <div class="concepts">
@@ -544,8 +544,8 @@
 </details>
 </div>
 <div class="toolbar">
-<button aria-pressed="false" class="justify-start" data-inema-read-toggle="">Marcar como lido</button>
-<button aria-pressed="false" class="justify-start" data-inema-doubt-toggle="">Tenho uma dúvida</button>
+<button aria-pressed="false" class="justify-start" data-ARCKHÉ-read-toggle="">Marcar como lido</button>
+<button aria-pressed="false" class="justify-start" data-ARCKHÉ-doubt-toggle="">Tenho uma dúvida</button>
 </div>
 </section>
 <section class="summary">
@@ -563,8 +563,8 @@
 </section>
 </main>
 <footer>
-<div class="wrap">Laya &amp; Jev · INEMA · Curso v2 · Conteúdo revisado em 21/09/2026<br/>
-<a href="../../fontes.html">Fontes e análise crítica</a> · <a href="https://inematds.github.io/laya/guia/">Guia do projeto</a> · <a href="https://github.com/inematds/laya-curso">Repositório do curso</a> · <a href="https://inema.club">INEMA.CLUB</a>
+<div class="wrap">Laya &amp; Jev · ARCKHÉ · Curso v2 · Conteúdo revisado em 21/09/2026<br/>
+<a href="../../fontes.html">Fontes e análise crítica</a> · <a href="https://linnoff88-dev.github.io/arckhe-/guia/">Guia do projeto</a> · <a href="https://github.com/linnoff88-dev/laya-curso">Repositório do curso</a> · <a href="https://ARCKHÉ AI">ARCKHÉ AI</a>
 </div>
 </footer>
 <dialog aria-labelledby="modal-title" id="module-modal">
@@ -579,6 +579,6 @@
 </script>
 <script src="../../assets/learn.js?v=1.1.0">
 </script>
-<script>document.addEventListener('DOMContentLoaded',function(){if(window.INEMA)INEMA.init();});</script>
+<script>document.addEventListener('DOMContentLoaded',function(){if(window.ARCKHÉ)ARCKHÉ.init();});</script>
 <nav aria-label="Idioma do curso" data-course-languages=""><a aria-current="page" href="modulo-1-1.html" hreflang="pt-BR" lang="pt-BR">Português</a><a href="../../en/curso/trilha1/modulo-1-1.html" hreflang="en" lang="en">English</a><a href="../../es/curso/trilha1/modulo-1-1.html" hreflang="es" lang="es">Español</a></nav><script data-course-language-hash="">document.querySelectorAll('[data-course-languages] a').forEach(function(a){a.addEventListener('click',function(){a.href=a.getAttribute('href').split('#')[0]+location.hash;});});</script></body>
 </html>

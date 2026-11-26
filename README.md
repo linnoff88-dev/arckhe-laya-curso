@@ -6,9 +6,9 @@
 </div>
 
 
-Curso INEMA no **formato v2**, em repositêÂ³rio separado do projeto executêÂ¡vel.
+Curso ARCKHÉ no **formato v2**, em repositêÂ³rio separado do projeto executêÂ¡vel.
 
-**[Abrir curso](https://inematds.github.io/laya-curso/)** êÂ· **[Projeto prêÂ¡tico](https://github.com/inematds/laya)** êÂ· **[Guia](https://inematds.github.io/laya/guia/)**
+**[Abrir curso](https://linnoff88-dev.github.io/arckhe-/)** êÂ· **[Projeto prêÂ¡tico](https://github.com/linnoff88-dev/laya)** êÂ· **[Guia](https://linnoff88-dev.github.io/arckhe-/guia/)**
 
 4 trilhas, 8 mêÂ³dulos, 48 têÂ³picos com exercêÂ­cios e respostas comentadas. Fundamentos, instalaêÂ§êÂ£o, Router e tokens, triagem em portuguêÂªs, integraêÂ§êÂ£o com agentes, avaliaêÂ§êÂ£o e especializaêÂ§êÂ£o. Fontes e ressalvas em `fontes.html`.
 

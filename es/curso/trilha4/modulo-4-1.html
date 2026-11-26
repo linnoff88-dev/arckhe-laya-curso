@@ -4,11 +4,11 @@
 <script>(function () {
   try {
     var html = document.documentElement;
-    var DEF = { theme: 'inema-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
+    var DEF = { theme: 'ARCKHÉ-dark', font: 'inter', fontScale: 100, lineWidth: 68, leading: 1.7, accent: 'emerald' };
     function clone(o) { var r = {}; for (var x in o) r[x] = o[x]; return r; }
     var p = clone(DEF);
     try {
-      var raw = localStorage.getItem('inema.prefs');
+      var raw = localStorage.getItem('ARCKHÉ.prefs');
       if (raw) {
         var parsed = JSON.parse(raw);
         if (parsed && typeof parsed === 'object') {
@@ -18,19 +18,19 @@
         // fallback ao tema legado do v1
         var legacy = localStorage.getItem('theme');
         if (legacy === 'light') p.theme = 'claro';
-        else if (legacy === 'dark') p.theme = 'inema-dark';
+        else if (legacy === 'dark') p.theme = 'ARCKHÉ-dark';
       }
     } catch (e) { p = clone(DEF); }
 
     // mapa tema -> (.dark on/off, data-theme, color-scheme)
     var THEMES = {
-      'inema-dark': { dark: true,  attr: null,        cs: 'dark'  },
+      'ARCKHÉ-dark': { dark: true,  attr: null,        cs: 'dark'  },
       'claro':      { dark: false, attr: null,        cs: 'light' },
       'sepia':      { dark: false, attr: 'sepia',     cs: 'light' },
       'foco':       { dark: null,  attr: 'foco',      cs: null    },  // herda eixo atual
       'contraste':  { dark: true,  attr: 'contraste', cs: 'dark'  }
     };
-    var t = THEMES[p.theme] || THEMES['inema-dark'];
+    var t = THEMES[p.theme] || THEMES['ARCKHÉ-dark'];
 
     if (t.dark === true) html.classList.add('dark');
     else if (t.dark === false) html.classList.remove('dark');
@@ -47,7 +47,7 @@
     // variaveis de leitura (espelham learn.js / learn.css) ANTES do paint
     var s = html.style;
     var scale = (+p.fontScale || 100);
-    s.setProperty('--inema-font-scale', (scale / 100).toString());
+    s.setProperty('--ARCKHÉ-font-scale', (scale / 100).toString());
     s.setProperty('font-size', scale + '%');               // :root em %, nunca px
     s.setProperty('--measure', (+p.lineWidth || 68) + 'ch');
     s.setProperty('--lh-body', (+p.leading || 1.7).toString());
@@ -75,57 +75,57 @@
 </script>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<meta content="laya-curso-es" name="inema-course"/>
+<meta content="laya-curso-es" name="ARCKHÉ-course"/>
 <meta content="Curso práctico de Laya y Jev: decisiones estructuradas, inferencia local, triaje en portugués y evaluación crítica." name="description"/>
-<title>Benchmarks, calibración y evaluación | Laya &amp; Jev · INEMA</title>
-<script data-inema-manifest="" type="application/json">{"course": "laya-curso-es", "tracks": [{"n": "1", "title": "Fundamentos", "modules": [{"id": "1-1", "title": "Decidir no es conversar", "topics": 6, "href": "curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "Las tres primitivas", "topics": 6, "href": "curso/trilha1/modulo-1-2.html"}]}, {"n": "2", "title": "Motor local", "modules": [{"id": "2-1", "title": "Instalación e primera inferencia", "topics": 6, "href": "curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Router, contexto y procesamiento", "topics": 6, "href": "curso/trilha2/modulo-2-2.html"}]}, {"n": "3", "title": "Aplicación práctica", "modules": [{"id": "3-1", "title": "Mesa de triaje en portugués", "topics": 6, "href": "curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "Integración con agentes y procesos", "topics": 6, "href": "curso/trilha3/modulo-3-2.html"}]}, {"n": "4", "title": "Calidad y evolución", "modules": [{"id": "4-1", "title": "Benchmarks, calibración y evaluación", "topics": 6, "href": "curso/trilha4/modulo-4-1.html"}, {"id": "4-2", "title": "Especialización y proyecto final", "topics": 6, "href": "curso/trilha4/modulo-4-2.html"}]}]}</script>
+<title>Benchmarks, calibración y evaluación | Laya &amp; Jev · ARCKHÉ</title>
+<script data-ARCKHÉ-manifest="" type="application/json">{"course": "laya-curso-es", "tracks": [{"n": "1", "title": "Fundamentos", "modules": [{"id": "1-1", "title": "Decidir no es conversar", "topics": 6, "href": "curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "Las tres primitivas", "topics": 6, "href": "curso/trilha1/modulo-1-2.html"}]}, {"n": "2", "title": "Motor local", "modules": [{"id": "2-1", "title": "Instalación e primera inferencia", "topics": 6, "href": "curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Router, contexto y procesamiento", "topics": 6, "href": "curso/trilha2/modulo-2-2.html"}]}, {"n": "3", "title": "Aplicación práctica", "modules": [{"id": "3-1", "title": "Mesa de triaje en portugués", "topics": 6, "href": "curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "Integración con agentes y procesos", "topics": 6, "href": "curso/trilha3/modulo-3-2.html"}]}, {"n": "4", "title": "Calidad y evolución", "modules": [{"id": "4-1", "title": "Benchmarks, calibración y evaluación", "topics": 6, "href": "curso/trilha4/modulo-4-1.html"}, {"id": "4-2", "title": "Especialización y proyecto final", "topics": 6, "href": "curso/trilha4/modulo-4-2.html"}]}]}</script>
 <link href="../../assets/course.css?v=1.1.0" rel="stylesheet"/>
 <link href="../../assets/learn.css" rel="stylesheet"/>
 <style>:root{--track:#fbbf24}</style>
-<link href="https://inematds.github.io/laya-curso/curso/trilha4/modulo-4-1.html" hreflang="pt-BR" rel="alternate"/><link href="https://inematds.github.io/laya-curso/en/curso/trilha4/modulo-4-1.html" hreflang="en" rel="alternate"/><link href="https://inematds.github.io/laya-curso/es/curso/trilha4/modulo-4-1.html" hreflang="es" rel="alternate"/><link href="https://inematds.github.io/laya-curso/curso/trilha4/modulo-4-1.html" hreflang="x-default" rel="alternate"/><link href="https://inematds.github.io/laya-curso/es/curso/trilha4/modulo-4-1.html" rel="canonical"/><style id="course-language-css">[data-course-languages]{position:fixed;bottom:0;left:0;right:0;z-index:60;display:flex;gap:1.25rem;padding:.65rem;justify-content:center;background:#111827;color:#f3f4f6}[data-course-languages] a{color:inherit;font:14px system-ui}[data-course-languages] [aria-current]{font-weight:bold;text-decoration:underline}[data-course-languages] a:focus-visible{outline:2px solid #38bdf8;outline-offset:4px}body{padding-bottom:75px}</style></head>
+<link href="https://linnoff88-dev.github.io/arckhe-/curso/trilha4/modulo-4-1.html" hreflang="pt-BR" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/en/curso/trilha4/modulo-4-1.html" hreflang="en" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/es/curso/trilha4/modulo-4-1.html" hreflang="es" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/curso/trilha4/modulo-4-1.html" hreflang="x-default" rel="alternate"/><link href="https://linnoff88-dev.github.io/arckhe-/es/curso/trilha4/modulo-4-1.html" rel="canonical"/><style id="course-language-css">[data-course-languages]{position:fixed;bottom:0;left:0;right:0;z-index:60;display:flex;gap:1.25rem;padding:.65rem;justify-content:center;background:#111827;color:#f3f4f6}[data-course-languages] a{color:inherit;font:14px system-ui}[data-course-languages] [aria-current]{font-weight:bold;text-decoration:underline}[data-course-languages] a:focus-visible{outline:2px solid #38bdf8;outline-offset:4px}body{padding-bottom:75px}</style></head>
 <body class="bg-dark-900 text-neutral-100">
 <a class="skip" href="#conteudo">Saltar al contenido</a>
 <nav class="nav bg-dark-900 border-dark-600">
 <div class="nav-inner">
 <a class="brand" href="../../index.html">◈ LAYA</a>
-<a class="text-sky-400" href="https://inema.club" rel="noopener" target="_blank">INEMA.CLUB</a>
-<a href="https://inema.pro" rel="noopener" target="_blank">PRO</a>
+<a class="text-sky-400" href="https://ARCKHÉ AI" rel="noopener" target="_blank">ARCKHÉ AI</a>
+<a href="https://ARCKHÉ.pro" rel="noopener" target="_blank">PRO</a>
 <div class="nav-tracks">
 <a class="track-link" href="../../curso/trilha1/index.html">T1 · Fundamentos</a>
 <a class="track-link" href="../../curso/trilha2/index.html">T2 · Motor local</a>
 <a class="track-link" href="../../curso/trilha3/index.html">T3 · Aplicación práctica</a>
 <a class="track-link active" href="../../curso/trilha4/index.html">T4 · Calidad y evolución</a>
 </div>
-<button aria-label="Alternar claro y oscuro" id="theme-toggle" onclick="INEMA.setPref('theme',document.documentElement.classList.contains('dark')?'claro':'inema-dark')">☀ / ☾</button>
+<button aria-label="Alternar claro y oscuro" id="theme-toggle" onclick="ARCKHÉ.setPref('theme',document.documentElement.classList.contains('dark')?'claro':'ARCKHÉ-dark')">☀ / ☾</button>
 </div>
 </nav>
-<main class="wrap" data-inema-track="4" id="conteudo">
+<main class="wrap" data-ARCKHÉ-track="4" id="conteudo">
 <div class="toolbar">
-<button data-inema-journey-open="">Mi recorrido</button>
-<button onclick="INEMA.resume()">Continuar desde donde lo dejé</button>
-<button aria-expanded="false" data-inema-appearance-toggle="#appearance">Apariencia y lectura</button>
+<button data-ARCKHÉ-journey-open="">Mi recorrido</button>
+<button onclick="ARCKHÉ.resume()">Continuar desde donde lo dejé</button>
+<button aria-expanded="false" data-ARCKHÉ-appearance-toggle="#appearance">Apariencia y lectura</button>
 </div>
-<div data-inema-appearance="" data-open="false" id="appearance">
+<div data-ARCKHÉ-appearance="" data-open="false" id="appearance">
 <strong>Tu comodidad de lectura</strong>
 <div class="toolbar">
-<button data-inema-set-theme="inema-dark">Oscuro</button>
-<button data-inema-set-theme="claro">Claro</button>
-<button data-inema-set-theme="sepia">Sepia</button>
-<button data-inema-set-theme="foco">Foco</button>
-<button data-inema-set-theme="contraste">Alto contraste</button>
+<button data-ARCKHÉ-set-theme="ARCKHÉ-dark">Oscuro</button>
+<button data-ARCKHÉ-set-theme="claro">Claro</button>
+<button data-ARCKHÉ-set-theme="sepia">Sepia</button>
+<button data-ARCKHÉ-set-theme="foco">Foco</button>
+<button data-ARCKHÉ-set-theme="contraste">Alto contraste</button>
 </div>
 <div class="toolbar">
-<button data-inema-set-fontscale="100">Fuente 100%</button>
-<button data-inema-set-fontscale="112">Fuente 112%</button>
-<button data-inema-set-fontscale="125">Fuente 125%</button>
-<button data-inema-set-leading="1.45">Interlineado compacto</button>
-<button data-inema-set-leading="1.7">Interlineado cómodo</button>
-<button data-inema-set-linewidth="60">Columna corta</button>
-<button data-inema-set-linewidth="75">Columna ancha</button>
-<button data-inema-set-font="system">Fuente del sistema</button>
-<button data-inema-set-font="leitura">Fuente de lectura</button>
-<button data-inema-set-accent="amber">Acento ámbar</button>
-<button data-inema-set-accent="blue">Acento azul</button>
+<button data-ARCKHÉ-set-fontscale="100">Fuente 100%</button>
+<button data-ARCKHÉ-set-fontscale="112">Fuente 112%</button>
+<button data-ARCKHÉ-set-fontscale="125">Fuente 125%</button>
+<button data-ARCKHÉ-set-leading="1.45">Interlineado compacto</button>
+<button data-ARCKHÉ-set-leading="1.7">Interlineado cómodo</button>
+<button data-ARCKHÉ-set-linewidth="60">Columna corta</button>
+<button data-ARCKHÉ-set-linewidth="75">Columna ancha</button>
+<button data-ARCKHÉ-set-font="system">Fuente del sistema</button>
+<button data-ARCKHÉ-set-font="leitura">Fuente de lectura</button>
+<button data-ARCKHÉ-set-accent="amber">Acento ámbar</button>
+<button data-ARCKHÉ-set-accent="blue">Acento azul</button>
 </div>
 </div>
 <div class="breadcrumb">
@@ -165,22 +165,22 @@
 <rect fill="#111827" height="88" rx="12" stroke="#fbbf24" stroke-width="2" width="220" x="520" y="48"></rect>
 <text fill="#e5e7eb" font-size="18" font-weight="600" text-anchor="middle" x="630" y="98">Conclusión</text>
 </g>
-<text fill="#cbd5e1" font-size="12" text-anchor="middle" x="380" y="166">LAYA / INEMA · flujo conceptual</text>
+<text fill="#cbd5e1" font-size="12" text-anchor="middle" x="380" y="166">LAYA / ARCKHÉ · flujo conceptual</text>
 </svg>
 </div>
-<div aria-label="Progreso" class="meter" data-inema-meter="modulo:4-1">
-<span>Tu progreso</span> <span data-inema-meter-frac="">
+<div aria-label="Progreso" class="meter" data-ARCKHÉ-meter="modulo:4-1">
+<span>Tu progreso</span> <span data-ARCKHÉ-meter-frac="">
 </span>
-<div class="inema-bar">
-<div class="inema-bar__fill" data-inema-meter-fill="">
+<div class="ARCKHÉ-bar">
+<div class="ARCKHÉ-bar__fill" data-ARCKHÉ-meter-fill="">
 </div>
 </div>
 </div>
-<div aria-label="Progreso" class="meter" data-inema-meter="curso">
-<span>Tu progreso</span> <span data-inema-meter-frac="">
+<div aria-label="Progreso" class="meter" data-ARCKHÉ-meter="curso">
+<span>Tu progreso</span> <span data-ARCKHÉ-meter-frac="">
 </span>
-<div class="inema-bar">
-<div class="inema-bar__fill" data-inema-meter-fill="">
+<div class="ARCKHÉ-bar">
+<div class="ARCKHÉ-bar__fill" data-ARCKHÉ-meter-fill="">
 </div>
 </div>
 </div>
@@ -204,20 +204,20 @@
 <a href="#topico-6">Ejecuta e interpreta la evaluación local</a>
 </li>
 </ol>
-<section class="topic" data-inema-module="4-1" data-inema-topic="modulo-4-1#topico-1" id="topico-1">
+<section class="topic" data-ARCKHÉ-module="4-1" data-ARCKHÉ-topic="modulo-4-1#topico-1" id="topico-1">
 <div class="topic-heading">
 <span class="circle">1</span>
 <h2 class="text-2xl font-bold">Lee la unidad de comparación</h2>
 </div>
-<div class="inema-prose">
+<div class="ARCKHÉ-prose">
 <h3>Qué es</h3>
-<p data-inema-block="modulo-4-1-t1-what">Las fuentes combinan resultados de benchmarks, tareas y checkpoints diferentes. El rendimiento del modelo especializado no describe el modelo base. Los números de Jev citados por Laya provienen de terceros y no de una ejecución controlada por el mismo autor con prompts idénticos.</p>
+<p data-ARCKHÉ-block="modulo-4-1-t1-what">Las fuentes combinan resultados de benchmarks, tareas y checkpoints diferentes. El rendimiento del modelo especializado no describe el modelo base. Los números de Jev citados por Laya provienen de terceros y no de una ejecución controlada por el mismo autor con prompts idénticos.</p>
 <h3>Por qué aprender</h3>
-<p data-inema-block="modulo-4-1-t1-why">Antes de repetir un porcentaje, anota modelo, revisión, dataset, cantidad de clases, número de ejemplos y método. Una tabla puede ser útil como indicación de investigación sin sustentar un ranking universal. Las condiciones deben acompañar a los números en el informe.</p>
+<p data-ARCKHÉ-block="modulo-4-1-t1-why">Antes de repetir un porcentaje, anota modelo, revisión, dataset, cantidad de clases, número de ejemplos y método. Una tabla puede ser útil como indicación de investigación sin sustentar un ranking universal. Las condiciones deben acompañar a los números en el informe.</p>
 </div>
 <div class="example">
 <strong>Ejemplo aplicado</strong>
-<p data-inema-block="modulo-4-1-t1-example">Typed-decisions usa workflows específicos; Banking77 prueba muchas clases. Ganar en el primero no implica ganar en el segundo.</p>
+<p data-ARCKHÉ-block="modulo-4-1-t1-example">Typed-decisions usa workflows específicos; Banking77 prueba muchas clases. Ganar en el primero no implica ganar en el segundo.</p>
 </div>
 <div class="comparison">
 <div class="yes bg-emerald-900/20">
@@ -258,24 +258,24 @@
 </details>
 </div>
 <div class="toolbar">
-<button aria-pressed="false" class="justify-start" data-inema-read-toggle="">Marcar como leído</button>
-<button aria-pressed="false" class="justify-start" data-inema-doubt-toggle="">Tengo una duda</button>
+<button aria-pressed="false" class="justify-start" data-ARCKHÉ-read-toggle="">Marcar como leído</button>
+<button aria-pressed="false" class="justify-start" data-ARCKHÉ-doubt-toggle="">Tengo una duda</button>
 </div>
 </section>
-<section class="topic" data-inema-module="4-1" data-inema-topic="modulo-4-1#topico-2" id="topico-2">
+<section class="topic" data-ARCKHÉ-module="4-1" data-ARCKHÉ-topic="modulo-4-1#topico-2" id="topico-2">
 <div class="topic-heading">
 <span class="circle">2</span>
 <h2 class="text-2xl font-bold">Los límites del zero-shot</h2>
 </div>
-<div class="inema-prose">
+<div class="ARCKHÉ-prose">
 <h3>Qué es</h3>
-<p data-inema-block="modulo-4-1-t2-what">El informe actual muestra los checkpoints base por debajo de la baseline de la clase mayoritaria en typed-decisions, mientras que la versión especializada mejora. Esto indica que indicar preguntas nuevas no garantiza competencia en el dominio. La especialización y los datos de entrenamiento importan para interpretar el resultado.</p>
+<p data-ARCKHÉ-block="modulo-4-1-t2-what">El informe actual muestra los checkpoints base por debajo de la baseline de la clase mayoritaria en typed-decisions, mientras que la versión especializada mejora. Esto indica que indicar preguntas nuevas no garantiza competencia en el dominio. La especialización y los datos de entrenamiento importan para interpretar el resultado.</p>
 <h3>Por qué aprender</h3>
-<p data-inema-block="modulo-4-1-t2-why">En el laboratorio, el conjunto pequeño de tickets es una prueba funcional de smoke test. Incluso un resultado excelente no valida mensajes reales, abreviaciones, casos adversarios ni categorías raras. El siguiente paso es reunir ejemplos representativos antes de decidir invertir en entrenamiento.</p>
+<p data-ARCKHÉ-block="modulo-4-1-t2-why">En el laboratorio, el conjunto pequeño de tickets es una prueba funcional de smoke test. Incluso un resultado excelente no valida mensajes reales, abreviaciones, casos adversarios ni categorías raras. El siguiente paso es reunir ejemplos representativos antes de decidir invertir en entrenamiento.</p>
 </div>
 <div class="example">
 <strong>Ejemplo aplicado</strong>
-<p data-inema-block="modulo-4-1-t2-example">Un modelo entrenado para cuatro workflows sintéticos no se convierte automáticamente en un analista universal de procesos empresariales.</p>
+<p data-ARCKHÉ-block="modulo-4-1-t2-example">Un modelo entrenado para cuatro workflows sintéticos no se convierte automáticamente en un analista universal de procesos empresariales.</p>
 </div>
 <ol class="timeline">
 <li>
@@ -328,24 +328,24 @@
 </details>
 </div>
 <div class="toolbar">
-<button aria-pressed="false" class="justify-start" data-inema-read-toggle="">Marcar como leído</button>
-<button aria-pressed="false" class="justify-start" data-inema-doubt-toggle="">Tengo una duda</button>
+<button aria-pressed="false" class="justify-start" data-ARCKHÉ-read-toggle="">Marcar como leído</button>
+<button aria-pressed="false" class="justify-start" data-ARCKHÉ-doubt-toggle="">Tengo una duda</button>
 </div>
 </section>
-<section class="topic" data-inema-module="4-1" data-inema-topic="modulo-4-1#topico-3" id="topico-3">
+<section class="topic" data-ARCKHÉ-module="4-1" data-ARCKHÉ-topic="modulo-4-1#topico-3" id="topico-3">
 <div class="topic-heading">
 <span class="circle">3</span>
 <h2 class="text-2xl font-bold">Precisión y matriz de confusión</h2>
 </div>
-<div class="inema-prose">
+<div class="ARCKHÉ-prose">
 <h3>Qué es</h3>
-<p data-inema-block="modulo-4-1-t3-what">La precisión es la fracción de predicciones correctas. Puede ocultar desbalance y errores concentrados en una clase. Una matriz de confusión cuenta, para cada etiqueta esperada, qué salidas se produjeron. Compara también una regla simple, como siempre elegir la clase más frecuente.</p>
+<p data-ARCKHÉ-block="modulo-4-1-t3-what">La precisión es la fracción de predicciones correctas. Puede ocultar desbalance y errores concentrados en una clase. Una matriz de confusión cuenta, para cada etiqueta esperada, qué salidas se produjeron. Compara también una regla simple, como siempre elegir la clase más frecuente.</p>
 <h3>Por qué aprender</h3>
-<p data-inema-block="modulo-4-1-t3-why">En atención, confundir sales con other puede tener un impacto distinto a desviar un incidente crítico. Reporta errores por categoría y ejemplos representativos. Con una muestra pequeña, muestra conteos además de porcentajes para no sugerir precisión estadística que los datos no sostienen.</p>
+<p data-ARCKHÉ-block="modulo-4-1-t3-why">En atención, confundir sales con other puede tener un impacto distinto a desviar un incidente crítico. Reporta errores por categoría y ejemplos representativos. Con una muestra pequeña, muestra conteos además de porcentajes para no sugerir precisión estadística que los datos no sostienen.</p>
 </div>
 <div class="example">
 <strong>Ejemplo aplicado</strong>
-<p data-inema-block="modulo-4-1-t3-example">Si 90 de 100 tickets son financieros, elegir billing siempre ya da 90% de precisión, sin entender ningún texto.</p>
+<p data-ARCKHÉ-block="modulo-4-1-t3-example">Si 90 de 100 tickets son financieros, elegir billing siempre ya da 90% de precisión, sin entender ningún texto.</p>
 </div>
 <aside class="tip bg-primary/10 border-primary/30">
 <h3>Consejo práctico</h3>
@@ -388,24 +388,24 @@
 </details>
 </div>
 <div class="toolbar">
-<button aria-pressed="false" class="justify-start" data-inema-read-toggle="">Marcar como leído</button>
-<button aria-pressed="false" class="justify-start" data-inema-doubt-toggle="">Tengo una duda</button>
+<button aria-pressed="false" class="justify-start" data-ARCKHÉ-read-toggle="">Marcar como leído</button>
+<button aria-pressed="false" class="justify-start" data-ARCKHÉ-doubt-toggle="">Tengo una duda</button>
 </div>
 </section>
-<section class="topic" data-inema-module="4-1" data-inema-topic="modulo-4-1#topico-4" id="topico-4">
+<section class="topic" data-ARCKHÉ-module="4-1" data-ARCKHÉ-topic="modulo-4-1#topico-4" id="topico-4">
 <div class="topic-heading">
 <span class="circle">4</span>
 <h2 class="text-2xl font-bold">Brier y ECE responden preguntas diferentes</h2>
 </div>
-<div class="inema-prose">
+<div class="ARCKHÉ-prose">
 <h3>Qué es</h3>
-<p data-inema-block="modulo-4-1-t4-what">El Brier multiclase suma el error cuadrático entre probabilidades y la etiqueta one-hot. ECE compara, en rangos de probabilidad, la confianza media y la frecuencia de acierto. La implementación usa la probabilidad de la clase elegida en diez bins, no la confianza de entropía del SDK.</p>
+<p data-ARCKHÉ-block="modulo-4-1-t4-what">El Brier multiclase suma el error cuadrático entre probabilidades y la etiqueta one-hot. ECE compara, en rangos de probabilidad, la confianza media y la frecuencia de acierto. La implementación usa la probabilidad de la clase elegida en diez bins, no la confianza de entropía del SDK.</p>
 <h3>Por qué aprender</h3>
-<p data-inema-block="modulo-4-1-t4-why">Declara la fórmula: algunos informes dividen Brier entre el número de clases, otros lo suman. ECE depende de los rangos y de la muestra; pocos casos dejan bins vacíos o inestables. Un valor pequeño en dieciséis ejemplos no es una prueba de calibración.</p>
+<p data-ARCKHÉ-block="modulo-4-1-t4-why">Declara la fórmula: algunos informes dividen Brier entre el número de clases, otros lo suman. ECE depende de los rangos y de la muestra; pocos casos dejan bins vacíos o inestables. Un valor pequeño en dieciséis ejemplos no es una prueba de calibración.</p>
 </div>
 <div class="example">
 <strong>Ejemplo aplicado</strong>
-<p data-inema-block="modulo-4-1-t4-example">Una predicción errada con probabilidad 0,99 recibe una penalización mayor que una distribución cautelosa. Las dos pueden tener la misma precisión de argmax.</p>
+<p data-ARCKHÉ-block="modulo-4-1-t4-example">Una predicción errada con probabilidad 0,99 recibe una penalización mayor que una distribución cautelosa. Las dos pueden tener la misma precisión de argmax.</p>
 </div>
 <div class="comparison">
 <div class="yes bg-emerald-900/20">
@@ -446,24 +446,24 @@
 </details>
 </div>
 <div class="toolbar">
-<button aria-pressed="false" class="justify-start" data-inema-read-toggle="">Marcar como leído</button>
-<button aria-pressed="false" class="justify-start" data-inema-doubt-toggle="">Tengo una duda</button>
+<button aria-pressed="false" class="justify-start" data-ARCKHÉ-read-toggle="">Marcar como leído</button>
+<button aria-pressed="false" class="justify-start" data-ARCKHÉ-doubt-toggle="">Tengo una duda</button>
 </div>
 </section>
-<section class="topic" data-inema-module="4-1" data-inema-topic="modulo-4-1#topico-5" id="topico-5">
+<section class="topic" data-ARCKHÉ-module="4-1" data-ARCKHÉ-topic="modulo-4-1#topico-5" id="topico-5">
 <div class="topic-heading">
 <span class="circle">5</span>
 <h2 class="text-2xl font-bold">La calibración exige datos reservados</h2>
 </div>
-<div class="inema-prose">
+<div class="ARCKHÉ-prose">
 <h3>Qué es</h3>
-<p data-inema-block="modulo-4-1-t5-what">La temperature scaling divide logits por una temperatura antes del softmax. Puede reducir el exceso de confianza sin mejorar la clasificación elegida. Ajustar la temperatura y medir su efecto en los mismos datos crea una estimación optimista. Separa la calibración de la evaluación final.</p>
+<p data-ARCKHÉ-block="modulo-4-1-t5-what">La temperature scaling divide logits por una temperatura antes del softmax. Puede reducir el exceso de confianza sin mejorar la clasificación elegida. Ajustar la temperatura y medir su efecto en los mismos datos crea una estimación optimista. Separa la calibración de la evaluación final.</p>
 <h3>Por qué aprender</h3>
-<p data-inema-block="modulo-4-1-t5-why">El checkpoint multilingüe se describe como no calibrado para el dominio del usuario. El laboratorio informa esta condición y no finge realizar calibración. Antes de confiar en un umbral, reúne datos suficientes y observa la tasa de error versus cobertura en el conjunto reservado.</p>
+<p data-ARCKHÉ-block="modulo-4-1-t5-why">El checkpoint multilingüe se describe como no calibrado para el dominio del usuario. El laboratorio informa esta condición y no finge realizar calibración. Antes de confiar en un umbral, reúne datos suficientes y observa la tasa de error versus cobertura en el conjunto reservado.</p>
 </div>
 <div class="example">
 <strong>Ejemplo aplicado</strong>
-<p data-inema-block="modulo-4-1-t5-example">El entrenamiento enseña parámetros; la calibración ajusta probabilidades; la prueba mide el resultado final sin nuevos ajustes.</p>
+<p data-ARCKHÉ-block="modulo-4-1-t5-example">El entrenamiento enseña parámetros; la calibración ajusta probabilidades; la prueba mide el resultado final sin nuevos ajustes.</p>
 </div>
 <aside class="tip bg-primary/10 border-primary/30">
 <h3>Consejo práctico</h3>
@@ -497,24 +497,24 @@
 </details>
 </div>
 <div class="toolbar">
-<button aria-pressed="false" class="justify-start" data-inema-read-toggle="">Marcar como leído</button>
-<button aria-pressed="false" class="justify-start" data-inema-doubt-toggle="">Tengo una duda</button>
+<button aria-pressed="false" class="justify-start" data-ARCKHÉ-read-toggle="">Marcar como leído</button>
+<button aria-pressed="false" class="justify-start" data-ARCKHÉ-doubt-toggle="">Tengo una duda</button>
 </div>
 </section>
-<section class="topic" data-inema-module="4-1" data-inema-topic="modulo-4-1#topico-6" id="topico-6">
+<section class="topic" data-ARCKHÉ-module="4-1" data-ARCKHÉ-topic="modulo-4-1#topico-6" id="topico-6">
 <div class="topic-heading">
 <span class="circle">6</span>
 <h2 class="text-2xl font-bold">Ejecuta e interpreta la evaluación local</h2>
 </div>
-<div class="inema-prose">
+<div class="ARCKHÉ-prose">
 <h3>Qué es</h3>
-<p data-inema-block="modulo-4-1-t6-what">El comando evaluate lee JSONL, ejecuta pesos reales y guarda resultados por ejemplo, precisión, baseline, Brier y ECE. Los mensajes son sintéticos y el informe incluye una limitación explícita. Inspecciona cada error antes de pensar en entrenamiento o en cambiar un umbral.</p>
+<p data-ARCKHÉ-block="modulo-4-1-t6-what">El comando evaluate lee JSONL, ejecuta pesos reales y guarda resultados por ejemplo, precisión, baseline, Brier y ECE. Los mensajes son sintéticos y el informe incluye una limitación explícita. Inspecciona cada error antes de pensar en entrenamiento o en cambiar un umbral.</p>
 <h3>Por qué aprender</h3>
-<p data-inema-block="modulo-4-1-t6-why">Usa el informe como punto de partida para un conjunto propio. Agrega negaciones, duplicados, mensajes muy cortos, categorías raras y textos largos. Si cambias preguntas después de ver los resultados, mantén la versión anterior y evalúa en nuevos casos reservados.</p>
+<p data-ARCKHÉ-block="modulo-4-1-t6-why">Usa el informe como punto de partida para un conjunto propio. Agrega negaciones, duplicados, mensajes muy cortos, categorías raras y textos largos. Si cambias preguntas después de ver los resultados, mantén la versión anterior y evalúa en nuevos casos reservados.</p>
 </div>
 <div class="example">
 <strong>Ejemplo aplicado</strong>
-<p data-inema-block="modulo-4-1-t6-example">python3 -m practical --device cuda evaluate --output avaliacao.json</p>
+<p data-ARCKHÉ-block="modulo-4-1-t6-example">python3 -m practical --device cuda evaluate --output avaliacao.json</p>
 </div>
 <h3>Conceptos clave</h3>
 <div class="concepts">
@@ -544,8 +544,8 @@
 </details>
 </div>
 <div class="toolbar">
-<button aria-pressed="false" class="justify-start" data-inema-read-toggle="">Marcar como leído</button>
-<button aria-pressed="false" class="justify-start" data-inema-doubt-toggle="">Tengo una duda</button>
+<button aria-pressed="false" class="justify-start" data-ARCKHÉ-read-toggle="">Marcar como leído</button>
+<button aria-pressed="false" class="justify-start" data-ARCKHÉ-doubt-toggle="">Tengo una duda</button>
 </div>
 </section>
 <section class="summary">
@@ -563,8 +563,8 @@
 </section>
 </main>
 <footer>
-<div class="wrap">Laya &amp; Jev · INEMA · Curso v2 · Contenido revisado el 21/09/2026<br/>
-<a href="../../fontes.html">Fuentes y análisis crítico</a> · <a href="https://inematds.github.io/laya/guia/">Guía del proyecto</a> · <a href="https://github.com/inematds/laya-curso">Repositorio del curso</a> · <a href="https://inema.club">INEMA.CLUB</a>
+<div class="wrap">Laya &amp; Jev · ARCKHÉ · Curso v2 · Contenido revisado el 21/09/2026<br/>
+<a href="../../fontes.html">Fuentes y análisis crítico</a> · <a href="https://linnoff88-dev.github.io/arckhe-/guia/">Guía del proyecto</a> · <a href="https://github.com/linnoff88-dev/laya-curso">Repositorio del curso</a> · <a href="https://ARCKHÉ AI">ARCKHÉ AI</a>
 </div>
 </footer>
 <dialog aria-labelledby="modal-title" id="module-modal">
@@ -579,6 +579,6 @@
 </script>
 <script src="../../assets/learn.js?v=1.1.0">
 </script>
-<script>document.addEventListener('DOMContentLoaded',function(){if(window.INEMA)INEMA.init();});</script>
+<script>document.addEventListener('DOMContentLoaded',function(){if(window.ARCKHÉ)ARCKHÉ.init();});</script>
 <nav aria-label="Idioma del curso" data-course-languages=""><a href="../../../curso/trilha4/modulo-4-1.html" hreflang="pt-BR" lang="pt-BR">Português</a><a href="../../../en/curso/trilha4/modulo-4-1.html" hreflang="en" lang="en">English</a><a aria-current="page" href="modulo-4-1.html" hreflang="es" lang="es">Español</a></nav><script data-course-language-hash="">document.querySelectorAll('[data-course-languages] a').forEach(function(a){a.addEventListener('click',function(){a.href=a.getAttribute('href').split('#')[0]+location.hash;});});</script></body>
 </html>

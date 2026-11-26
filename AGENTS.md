@@ -1,7 +1,7 @@
 # Laya curso
 
-Conta: inematds. Autor e committer: inematds <inematds@gmail.com>.
-Curso formato INEMA v2; projeto executável em ../laya.
+Conta: linnoff88-dev. Autor e committer: linnoff88-dev <linnoff88-dev@gmail.com>.
+Curso formato ARCKHÉ v2; projeto executável em ../laya.
 Leia context/overview.md e context/current-state.md.
 Edite scripts/content.py e scripts/build.py; gere e valide HTML com scripts/check.py.
 Nêo substituir a camada v2 por outro formato. Preserve IDs de tópicos e notas.

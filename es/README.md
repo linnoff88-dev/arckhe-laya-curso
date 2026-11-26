@@ -1,8 +1,8 @@
 # Laya & Jev — decisiones estructuradas en la práctica
 
-Curso INEMA en formato v2, en un repositorio separado del proyecto ejecutable.
+Curso ARCKHÉ en formato v2, en un repositorio separado del proyecto ejecutable.
 
-**[Abrir curso](https://inematds.github.io/laya-curso/)** · **[Proyecto práctico](https://github.com/inematds/laya)** · **[Guía](https://inematds.github.io/laya/guia/)**
+**[Abrir curso](https://linnoff88-dev.github.io/arckhe-/)** · **[Proyecto práctico](https://github.com/linnoff88-dev/laya)** · **[Guía](https://linnoff88-dev.github.io/arckhe-/guia/)**
 
 4 itinerarios, 8 módulos, 48 temas con ejercicios y respuestas comentadas. Fundamentos, instalación, Router y tokens, triage en portugués, integración con agentes, evaluación y especialización. Fuentes y reservas en `fontes.html`.
 
