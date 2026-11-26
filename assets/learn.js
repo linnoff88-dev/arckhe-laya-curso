@@ -1784,7 +1784,7 @@
 
     if (!Number.isInteger(parsed.schemaVersion) || parsed.schemaVersion < 1 ||
         (parsed.courseId && parsed.courseId !== S.courseId)) {
-      res.errors.push('Versão inválida ou arquivo de outro curso.'); return res;
+      res.errors.push('Versêo inválida ou arquivo de outro curso.'); return res;
     }
     var fields = ['read', 'doubts', 'notes', 'checks', 'meta'];
     for (var fi = 0; fi < fields.length; fi++) {

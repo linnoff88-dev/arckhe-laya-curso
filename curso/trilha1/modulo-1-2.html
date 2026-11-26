@@ -76,9 +76,9 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="laya-curso" name="inema-course"/>
-<meta content="Curso prático de Laya e Jev: decisões estruturadas, inferência local, triagem em português e avaliação crítica." name="description"/>
+<meta content="Curso prático de Laya e Jev: decisões estruturadas, inferência local, triagem em português e avaliaçêo crítica." name="description"/>
 <title>As três primitivas | Laya &amp; Jev · INEMA</title>
-<script data-inema-manifest="" type="application/json">{"course": "laya-curso", "tracks": [{"n": "1", "title": "Fundamentos", "modules": [{"id": "1-1", "title": "Decidir não é conversar", "topics": 6, "href": "curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "As três primitivas", "topics": 6, "href": "curso/trilha1/modulo-1-2.html"}]}, {"n": "2", "title": "Motor local", "modules": [{"id": "2-1", "title": "Instalação e primeira inferência", "topics": 6, "href": "curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Router, contexto e processamento", "topics": 6, "href": "curso/trilha2/modulo-2-2.html"}]}, {"n": "3", "title": "Aplicação prática", "modules": [{"id": "3-1", "title": "Mesa de triagem em português", "topics": 6, "href": "curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "Integração com agentes e processos", "topics": 6, "href": "curso/trilha3/modulo-3-2.html"}]}, {"n": "4", "title": "Qualidade e evolução", "modules": [{"id": "4-1", "title": "Benchmarks, calibração e avaliação", "topics": 6, "href": "curso/trilha4/modulo-4-1.html"}, {"id": "4-2", "title": "Especialização e projeto final", "topics": 6, "href": "curso/trilha4/modulo-4-2.html"}]}]}</script>
+<script data-inema-manifest="" type="application/json">{"course": "laya-curso", "tracks": [{"n": "1", "title": "Fundamentos", "modules": [{"id": "1-1", "title": "Decidir nêo é conversar", "topics": 6, "href": "curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "As três primitivas", "topics": 6, "href": "curso/trilha1/modulo-1-2.html"}]}, {"n": "2", "title": "Motor local", "modules": [{"id": "2-1", "title": "Instalaçêo e primeira inferência", "topics": 6, "href": "curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Router, contexto e processamento", "topics": 6, "href": "curso/trilha2/modulo-2-2.html"}]}, {"n": "3", "title": "Aplicaçêo prática", "modules": [{"id": "3-1", "title": "Mesa de triagem em português", "topics": 6, "href": "curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "Integraçêo com agentes e processos", "topics": 6, "href": "curso/trilha3/modulo-3-2.html"}]}, {"n": "4", "title": "Qualidade e evoluçêo", "modules": [{"id": "4-1", "title": "Benchmarks, calibraçêo e avaliaçêo", "topics": 6, "href": "curso/trilha4/modulo-4-1.html"}, {"id": "4-2", "title": "Especializaçêo e projeto final", "topics": 6, "href": "curso/trilha4/modulo-4-2.html"}]}]}</script>
 <link href="../../assets/course.css?v=1.1.0" rel="stylesheet"/>
 <link href="../../assets/learn.css" rel="stylesheet"/>
 <style>:root{--track:#34d399}</style>
@@ -93,8 +93,8 @@
 <div class="nav-tracks">
 <a class="track-link active" href="../../curso/trilha1/index.html">T1 · Fundamentos</a>
 <a class="track-link" href="../../curso/trilha2/index.html">T2 · Motor local</a>
-<a class="track-link" href="../../curso/trilha3/index.html">T3 · Aplicação prática</a>
-<a class="track-link" href="../../curso/trilha4/index.html">T4 · Qualidade e evolução</a>
+<a class="track-link" href="../../curso/trilha3/index.html">T3 · Aplicaçêo prática</a>
+<a class="track-link" href="../../curso/trilha4/index.html">T4 · Qualidade e evoluçêo</a>
 </div>
 <button aria-label="Alternar claro e escuro" id="theme-toggle" onclick="INEMA.setPref('theme',document.documentElement.classList.contains('dark')?'claro':'inema-dark')">☀ / ☾</button>
 </div>
@@ -192,10 +192,10 @@
 <a href="#topico-2">Score: uma escala ordinal</a>
 </li>
 <li>
-<a href="#topico-3">Noul: a força de uma afirmação</a>
+<a href="#topico-3">Noul: a força de uma afirmaçêo</a>
 </li>
 <li>
-<a href="#topico-4">Confiança não é probabilidade de acerto</a>
+<a href="#topico-4">Confiança nêo é probabilidade de acerto</a>
 </li>
 <li>
 <a href="#topico-5">O contrato JSON antes do modelo</a>
@@ -211,9 +211,9 @@
 </div>
 <div class="inema-prose">
 <h3>O que é</h3>
-<p data-inema-block="modulo-1-2-t1-what">Choice retorna a alternativa com maior valor na distribuição e as probabilidades das opções. Neste projeto, billing cobre pagamentos, technical cobre problemas do produto, sales cobre novas compras e other recebe casos sem encaixe. As descrições acompanham os nomes no prompt interno do encoder.</p>
+<p data-inema-block="modulo-1-2-t1-what">Choice retorna a alternativa com maior valor na distribuiçêo e as probabilidades das opções. Neste projeto, billing cobre pagamentos, technical cobre problemas do produto, sales cobre novas compras e other recebe casos sem encaixe. As descrições acompanham os nomes no prompt interno do encoder.</p>
 <h3>Por que aprender</h3>
-<p data-inema-block="modulo-1-2-t1-why">Nomes curtos com descrições claras ajudam a distinguir classes sem consumir todo o orçamento de tokens. Se você precisa atribuir vários rótulos independentes, uma única escolha obrigatória não expressa o problema; considere perguntas binárias separadas e avalie cada uma.</p>
+<p data-inema-block="modulo-1-2-t1-why">Nomes curtos com descrições claras ajudam a distinguir classes sem consumir todo o orçamento de tokens. Se você precisa atribuir vários rótulos independentes, uma única escolha obrigatória nêo expressa o problema; considere perguntas binárias separadas e avalie cada uma.</p>
 </div>
 <div class="example">
 <strong>Exemplo aplicado</strong>
@@ -222,12 +222,12 @@
 <div class="comparison">
 <div class="yes bg-emerald-900/20">
 <h3>✓ Aplicar com critério</h3>
-<p>Use duas perguntas noul independentes. Choice é adequado para selecionar um destino principal, não para representar todos os sinais de uma mensagem.</p>
+<p>Use duas perguntas noul independentes. Choice é adequado para selecionar um destino principal, nêo para representar todos os sinais de uma mensagem.</p>
 </div>
 <div class="no bg-red-900/20">
-<h3>✗ Evitar a conclusão automática</h3>
+<h3>✗ Evitar a conclusêo automática</h3>
 <p>Como classificar simultaneamente reembolso e ameaça de cancelar?</p>
-<p>Não aceite uma resposta só pelo nome do campo ou pela aparência de precisão. Confira a definição e o contexto desta seção.</p>
+<p>Nêo aceite uma resposta só pelo nome do campo ou pela aparência de precisêo. Confira a definiçêo e o contexto desta seçêo.</p>
 </div>
 </div>
 <h3>Conceitos-chave</h3>
@@ -237,24 +237,24 @@
 <p>maior valor</p>
 </div>
 <div>
-<strong>Distribuição</strong>
+<strong>Distribuiçêo</strong>
 <p>conjunto de probabilidades</p>
 </div>
 <div>
 <strong>Critério</strong>
-<p>descrição da classe</p>
+<p>descriçêo da classe</p>
 </div>
 <div>
 <strong>Residual</strong>
-<p>opção other</p>
+<p>opçêo other</p>
 </div>
 </div>
 <div class="exercise">
-<h3>Teste sua compreensão</h3>
+<h3>Teste sua compreensêo</h3>
 <p>Como classificar simultaneamente reembolso e ameaça de cancelar?</p>
 <details>
 <summary>Conferir resposta comentada</summary>
-<p>Use duas perguntas noul independentes. Choice é adequado para selecionar um destino principal, não para representar todos os sinais de uma mensagem.</p>
+<p>Use duas perguntas noul independentes. Choice é adequado para selecionar um destino principal, nêo para representar todos os sinais de uma mensagem.</p>
 </details>
 </div>
 <div class="toolbar">
@@ -269,9 +269,9 @@
 </div>
 <div class="inema-prose">
 <h3>O que é</h3>
-<p data-inema-block="modulo-1-2-t2-what">Score usa uma lista ordenada de níveis. O retorno é a expectativa da distribuição sobre os índices: com níveis 0, 1 e 2, pode aparecer 1,84. Isso não representa uma classe nova nem um prazo em horas. A legenda deve explicar o que cada degrau significa para a operação.</p>
+<p data-inema-block="modulo-1-2-t2-what">Score usa uma lista ordenada de níveis. O retorno é a expectativa da distribuiçêo sobre os índices: com níveis 0, 1 e 2, pode aparecer 1,84. Isso nêo representa uma classe nova nem um prazo em horas. A legenda deve explicar o que cada degrau significa para a operaçêo.</p>
 <h3>Por que aprender</h3>
-<p data-inema-block="modulo-1-2-t2-why">Uma escala só faz sentido quando os níveis têm ordem e critérios distinguíveis. Normal, sensível ao tempo e bloqueio imediato são uma rubrica inicial. O upstream aponta score como uma primitiva difícil; não transforme uma diferença pequena no decimal em decisão irreversível.</p>
+<p data-inema-block="modulo-1-2-t2-why">Uma escala só faz sentido quando os níveis têm ordem e critérios distinguíveis. Normal, sensível ao tempo e bloqueio imediato sêo uma rubrica inicial. O upstream aponta score como uma primitiva difícil; nêo transforme uma diferença pequena no decimal em decisêo irreversível.</p>
 </div>
 <div class="example">
 <strong>Exemplo aplicado</strong>
@@ -296,7 +296,7 @@
 <span class="circle">3</span>
 <div>
 <strong>Confira</strong>
-<p>Não. É uma média que pode vir de distribuições diferentes. Consulte as probabilidades por nível e o texto antes de definir a prioridade.</p>
+<p>Nêo. É uma média que pode vir de distribuições diferentes. Consulte as probabilidades por nível e o texto antes de definir a prioridade.</p>
 </div>
 </li>
 </ol>
@@ -320,11 +320,11 @@
 </div>
 </div>
 <div class="exercise">
-<h3>Teste sua compreensão</h3>
+<h3>Teste sua compreensêo</h3>
 <p>Um score 1,5 prova que a ocorrência é crítica?</p>
 <details>
 <summary>Conferir resposta comentada</summary>
-<p>Não. É uma média que pode vir de distribuições diferentes. Consulte as probabilidades por nível e o texto antes de definir a prioridade.</p>
+<p>Nêo. É uma média que pode vir de distribuições diferentes. Consulte as probabilidades por nível e o texto antes de definir a prioridade.</p>
 </details>
 </div>
 <div class="toolbar">
@@ -335,21 +335,21 @@
 <section class="topic" data-inema-module="1-2" data-inema-topic="modulo-1-2#topico-3" id="topico-3">
 <div class="topic-heading">
 <span class="circle">3</span>
-<h2 class="text-2xl font-bold">Noul: a força de uma afirmação</h2>
+<h2 class="text-2xl font-bold">Noul: a força de uma afirmaçêo</h2>
 </div>
 <div class="inema-prose">
 <h3>O que é</h3>
-<p data-inema-block="modulo-1-2-t3-what">Noul responde a uma afirmação com um valor entre zero e um. A pergunta deve ser observável no estado: o cliente pede dinheiro de volta? O cliente ameaça cancelar? A implementação usa opções false e true e devolve a probabilidade de true. Não é uma autorização para agir.</p>
+<p data-inema-block="modulo-1-2-t3-what">Noul responde a uma afirmaçêo com um valor entre zero e um. A pergunta deve ser observável no estado: o cliente pede dinheiro de volta? O cliente ameaça cancelar? A implementaçêo usa opções false e true e devolve a probabilidade de true. Nêo é uma autorizaçêo para agir.</p>
 <h3>Por que aprender</h3>
-<p data-inema-block="modulo-1-2-t3-why">Perguntas sobre intenção explícita são mais fáceis de rotular do que previsões vagas sobre comportamento futuro. Churn_risk neste laboratório significa ameaça textual de cancelamento; não foi treinado nem validado aqui para prever cancelamentos reais ao longo de meses.</p>
+<p data-inema-block="modulo-1-2-t3-why">Perguntas sobre intençêo explícita sêo mais fáceis de rotular do que previsões vagas sobre comportamento futuro. Churn_risk neste laboratório significa ameaça textual de cancelamento; nêo foi treinado nem validado aqui para prever cancelamentos reais ao longo de meses.</p>
 </div>
 <div class="example">
 <strong>Exemplo aplicado</strong>
-<p data-inema-block="modulo-1-2-t3-example">Quero meu dinheiro de volta contém pedido explícito. Estou insatisfeito não afirma necessariamente que a pessoa vai cancelar.</p>
+<p data-inema-block="modulo-1-2-t3-example">Quero meu dinheiro de volta contém pedido explícito. Estou insatisfeito nêo afirma necessariamente que a pessoa vai cancelar.</p>
 </div>
 <aside class="tip bg-primary/10 border-primary/30">
 <h3>Dica prática</h3>
-<p>Não. A definição da pergunta restringe o significado: sinal de ameaça explícita. Prever churn real exigiria outro conjunto de dados e validação longitudinal.</p>
+<p>Nêo. A definiçêo da pergunta restringe o significado: sinal de ameaça explícita. Prever churn real exigiria outro conjunto de dados e validaçêo longitudinal.</p>
 </aside>
 <div class="codebox">
 <h3>Exemplo de raciocínio</h3>
@@ -367,8 +367,8 @@
 <h3>Conceitos-chave</h3>
 <div class="concepts">
 <div>
-<strong>Afirmação</strong>
-<p>proposição</p>
+<strong>Afirmaçêo</strong>
+<p>proposiçêo</p>
 </div>
 <div>
 <strong>P(true)</strong>
@@ -384,11 +384,11 @@
 </div>
 </div>
 <div class="exercise">
-<h3>Teste sua compreensão</h3>
-<p>O nome churn_risk basta para tornar o valor uma previsão comercial?</p>
+<h3>Teste sua compreensêo</h3>
+<p>O nome churn_risk basta para tornar o valor uma previsêo comercial?</p>
 <details>
 <summary>Conferir resposta comentada</summary>
-<p>Não. A definição da pergunta restringe o significado: sinal de ameaça explícita. Prever churn real exigiria outro conjunto de dados e validação longitudinal.</p>
+<p>Nêo. A definiçêo da pergunta restringe o significado: sinal de ameaça explícita. Prever churn real exigiria outro conjunto de dados e validaçêo longitudinal.</p>
 </details>
 </div>
 <div class="toolbar">
@@ -399,54 +399,54 @@
 <section class="topic" data-inema-module="1-2" data-inema-topic="modulo-1-2#topico-4" id="topico-4">
 <div class="topic-heading">
 <span class="circle">4</span>
-<h2 class="text-2xl font-bold">Confiança não é probabilidade de acerto</h2>
+<h2 class="text-2xl font-bold">Confiança nêo é probabilidade de acerto</h2>
 </div>
 <div class="inema-prose">
 <h3>O que é</h3>
-<p data-inema-block="modulo-1-2-t4-what">No SDK analisado, a confiança de choice e score é 1 menos a entropia normalizada da distribuição. Distribuições concentradas produzem valores altos; distribuições espalhadas produzem valores baixos. Noul usa o maior valor entre P(true) e P(false). Esses campos não compartilham exatamente a mesma definição.</p>
+<p data-inema-block="modulo-1-2-t4-what">No SDK analisado, a confiança de choice e score é 1 menos a entropia normalizada da distribuiçêo. Distribuições concentradas produzem valores altos; distribuições espalhadas produzem valores baixos. Noul usa o maior valor entre P(true) e P(false). Esses campos nêo compartilham exatamente a mesma definiçêo.</p>
 <h3>Por que aprender</h3>
-<p data-inema-block="modulo-1-2-t4-why">Não calcule ECE usando um campo chamado confidence sem verificar o código. Para avaliação de classificação, o projeto utiliza a probabilidade da classe escolhida. Mesmo esse valor precisa ser confrontado com a frequência real de acertos em dados separados.</p>
+<p data-inema-block="modulo-1-2-t4-why">Nêo calcule ECE usando um campo chamado confidence sem verificar o código. Para avaliaçêo de classificaçêo, o projeto utiliza a probabilidade da classe escolhida. Mesmo esse valor precisa ser confrontado com a frequência real de acertos em dados separados.</p>
 </div>
 <div class="example">
 <strong>Exemplo aplicado</strong>
-<p data-inema-block="modulo-1-2-t4-example">Uma distribuição muito concentrada na opção errada terá confiança alta. Um checkpoint inadequado ao idioma pode errar dessa forma.</p>
+<p data-inema-block="modulo-1-2-t4-example">Uma distribuiçêo muito concentrada na opçêo errada terá confiança alta. Um checkpoint inadequado ao idioma pode errar dessa forma.</p>
 </div>
 <div class="comparison">
 <div class="yes bg-emerald-900/20">
 <h3>✓ Aplicar com critério</h3>
-<p>Não. Pela fórmula de entropia normalizada, a confiança é zero. A maior probabilidade continua sendo 0,5; são medidas diferentes.</p>
+<p>Nêo. Pela fórmula de entropia normalizada, a confiança é zero. A maior probabilidade continua sendo 0,5; sêo medidas diferentes.</p>
 </div>
 <div class="no bg-red-900/20">
-<h3>✗ Evitar a conclusão automática</h3>
+<h3>✗ Evitar a conclusêo automática</h3>
 <p>Duas classes com 0,5 cada têm confiança choice de 0,5?</p>
-<p>Não aceite uma resposta só pelo nome do campo ou pela aparência de precisão. Confira a definição e o contexto desta seção.</p>
+<p>Nêo aceite uma resposta só pelo nome do campo ou pela aparência de precisêo. Confira a definiçêo e o contexto desta seçêo.</p>
 </div>
 </div>
 <h3>Conceitos-chave</h3>
 <div class="concepts">
 <div>
 <strong>Entropia</strong>
-<p>dispersão</p>
+<p>dispersêo</p>
 </div>
 <div>
 <strong>Top probability</strong>
 <p>maior probabilidade</p>
 </div>
 <div>
-<strong>Calibração</strong>
-<p>frequência versus previsão</p>
+<strong>Calibraçêo</strong>
+<p>frequência versus previsêo</p>
 </div>
 <div>
-<strong>Concentração</strong>
+<strong>Concentraçêo</strong>
 <p>certeza interna</p>
 </div>
 </div>
 <div class="exercise">
-<h3>Teste sua compreensão</h3>
+<h3>Teste sua compreensêo</h3>
 <p>Duas classes com 0,5 cada têm confiança choice de 0,5?</p>
 <details>
 <summary>Conferir resposta comentada</summary>
-<p>Não. Pela fórmula de entropia normalizada, a confiança é zero. A maior probabilidade continua sendo 0,5; são medidas diferentes.</p>
+<p>Nêo. Pela fórmula de entropia normalizada, a confiança é zero. A maior probabilidade continua sendo 0,5; sêo medidas diferentes.</p>
 </details>
 </div>
 <div class="toolbar">
@@ -461,17 +461,17 @@
 </div>
 <div class="inema-prose">
 <h3>O que é</h3>
-<p data-inema-block="modulo-1-2-t5-what">O esquema contém identificadores estáveis, type, instructions e criteria quando necessário. Choice usa um dicionário; score usa lista ordenada; noul pode usar uma afirmação sem critérios extras. Manter identificadores estáveis preserva os consumidores da API quando a redação melhora.</p>
+<p data-inema-block="modulo-1-2-t5-what">O esquema contém identificadores estáveis, type, instructions e criteria quando necessário. Choice usa um dicionário; score usa lista ordenada; noul pode usar uma afirmaçêo sem critérios extras. Manter identificadores estáveis preserva os consumidores da API quando a redaçêo melhora.</p>
 <h3>Por que aprender</h3>
-<p data-inema-block="modulo-1-2-t5-why">Valide os resultados antes da política: as classes devem ser conhecidas, os valores finitos e as probabilidades aproximadamente somar um. O arredondamento do SDK exige pequena tolerância. Entradas inválidas devem gerar erro visível, não uma resposta que pareça ter sido calculada.</p>
+<p data-inema-block="modulo-1-2-t5-why">Valide os resultados antes da política: as classes devem ser conhecidas, os valores finitos e as probabilidades aproximadamente somar um. O arredondamento do SDK exige pequena tolerância. Entradas inválidas devem gerar erro visível, nêo uma resposta que pareça ter sido calculada.</p>
 </div>
 <div class="example">
 <strong>Exemplo aplicado</strong>
-<p data-inema-block="modulo-1-2-t5-example">Uma resposta com NaN, departamento desconhecido ou distribuição incompleta é rejeitada pela adaptação.</p>
+<p data-inema-block="modulo-1-2-t5-example">Uma resposta com NaN, departamento desconhecido ou distribuiçêo incompleta é rejeitada pela adaptaçêo.</p>
 </div>
 <aside class="tip bg-primary/10 border-primary/30">
 <h3>Dica prática</h3>
-<p>Ela pode não ter destino definido. É necessário atualizar esquema, política, interface e testes juntos antes de usar a nova categoria.</p>
+<p>Ela pode nêo ter destino definido. É necessário atualizar esquema, política, interface e testes juntos antes de usar a nova categoria.</p>
 </aside>
 <h3>Conceitos-chave</h3>
 <div class="concepts">
@@ -480,7 +480,7 @@
 <p>formato estável</p>
 </div>
 <div>
-<strong>Validação</strong>
+<strong>Validaçêo</strong>
 <p>checagem de dados</p>
 </div>
 <div>
@@ -493,11 +493,11 @@
 </div>
 </div>
 <div class="exercise">
-<h3>Teste sua compreensão</h3>
-<p>Por que não aceitar silenciosamente uma categoria nova?</p>
+<h3>Teste sua compreensêo</h3>
+<p>Por que nêo aceitar silenciosamente uma categoria nova?</p>
 <details>
 <summary>Conferir resposta comentada</summary>
-<p>Ela pode não ter destino definido. É necessário atualizar esquema, política, interface e testes juntos antes de usar a nova categoria.</p>
+<p>Ela pode nêo ter destino definido. É necessário atualizar esquema, política, interface e testes juntos antes de usar a nova categoria.</p>
 </details>
 </div>
 <div class="toolbar">
@@ -512,9 +512,9 @@
 </div>
 <div class="inema-prose">
 <h3>O que é</h3>
-<p data-inema-block="modulo-1-2-t6-what">Escreva seis mensagens de atendimento e responda manualmente às quatro perguntas. Inclua cobrança, falha técnica, nova compra, conversa irrelevante, cancelamento explícito e insatisfação sem cancelamento. Peça a outra pessoa para aplicar a mesma rubrica sem ver suas respostas.</p>
+<p data-inema-block="modulo-1-2-t6-what">Escreva seis mensagens de atendimento e responda manualmente às quatro perguntas. Inclua cobrança, falha técnica, nova compra, conversa irrelevante, cancelamento explícito e insatisfaçêo sem cancelamento. Peça a outra pessoa para aplicar a mesma rubrica sem ver suas respostas.</p>
 <h3>Por que aprender</h3>
-<p data-inema-block="modulo-1-2-t6-why">Discordâncias entre humanos mostram onde a pergunta ou a rubrica precisa melhorar. Não use o modelo para decidir automaticamente qual humano está certo. Registre a regra adotada e preserve alguns exemplos que não serão usados durante o ajuste das perguntas.</p>
+<p data-inema-block="modulo-1-2-t6-why">Discordâncias entre humanos mostram onde a pergunta ou a rubrica precisa melhorar. Nêo use o modelo para decidir automaticamente qual humano está certo. Registre a regra adotada e preserve alguns exemplos que nêo serêo usados durante o ajuste das perguntas.</p>
 </div>
 <div class="example">
 <strong>Exemplo aplicado</strong>
@@ -531,20 +531,20 @@
 <p>múltiplas leituras</p>
 </div>
 <div>
-<strong>Adjudicação</strong>
+<strong>Adjudicaçêo</strong>
 <p>acordo documentado</p>
 </div>
 <div>
 <strong>Reserva</strong>
-<p>exemplos não ajustados</p>
+<p>exemplos nêo ajustados</p>
 </div>
 </div>
 <div class="exercise">
-<h3>Teste sua compreensão</h3>
+<h3>Teste sua compreensêo</h3>
 <p>O que deve acompanhar cada exemplo rotulado?</p>
 <details>
 <summary>Conferir resposta comentada</summary>
-<p>Um identificador, a mensagem, o rótulo esperado e, em um dataset próprio, a justificativa e a versão da rubrica. Remova dados pessoais desnecessários.</p>
+<p>Um identificador, a mensagem, o rótulo esperado e, em um dataset próprio, a justificativa e a versêo da rubrica. Remova dados pessoais desnecessários.</p>
 </details>
 </div>
 <div class="toolbar">
@@ -555,14 +555,14 @@
 <section class="summary">
 <h2>Resumo do módulo</h2>
 <ul>
-<li>Use duas perguntas noul independentes. Choice é adequado para selecionar um destino principal, não para representar todos os sinais de uma mensagem.</li>
-<li>Não. A definição da pergunta restringe o significado: sinal de ameaça explícita. Prever churn real exigiria outro conjunto de dados e validação longitudinal.</li>
-<li>Ela pode não ter destino definido. É necessário atualizar esquema, política, interface e testes juntos antes de usar a nova categoria.</li>
+<li>Use duas perguntas noul independentes. Choice é adequado para selecionar um destino principal, nêo para representar todos os sinais de uma mensagem.</li>
+<li>Nêo. A definiçêo da pergunta restringe o significado: sinal de ameaça explícita. Prever churn real exigiria outro conjunto de dados e validaçêo longitudinal.</li>
+<li>Ela pode nêo ter destino definido. É necessário atualizar esquema, política, interface e testes juntos antes de usar a nova categoria.</li>
 </ul>
 <p>Selecione um trecho da aula para destacar ou anotar. Dúvidas e notas ficam na sua jornada; exporte o JSON para fazer backup.</p>
 <div class="toolbar">
 <a class="button" href="index.html">← Mapa da trilha</a>
-<a class="button primary" href="../trilha2/modulo-2-1.html">Próximo: Instalação e primeira inferência →</a>
+<a class="button primary" href="../trilha2/modulo-2-1.html">Próximo: Instalaçêo e primeira inferência →</a>
 </div>
 </section>
 </main>

@@ -76,9 +76,9 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="laya-curso" name="inema-course"/>
-<meta content="Curso prático de Laya e Jev: decisões estruturadas, inferência local, triagem em português e avaliação crítica." name="description"/>
-<title>Fontes e avaliação crítica | Laya &amp; Jev · INEMA</title>
-<script data-inema-manifest="" type="application/json">{"course": "laya-curso", "tracks": [{"n": "1", "title": "Fundamentos", "modules": [{"id": "1-1", "title": "Decidir não é conversar", "topics": 6, "href": "curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "As três primitivas", "topics": 6, "href": "curso/trilha1/modulo-1-2.html"}]}, {"n": "2", "title": "Motor local", "modules": [{"id": "2-1", "title": "Instalação e primeira inferência", "topics": 6, "href": "curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Router, contexto e processamento", "topics": 6, "href": "curso/trilha2/modulo-2-2.html"}]}, {"n": "3", "title": "Aplicação prática", "modules": [{"id": "3-1", "title": "Mesa de triagem em português", "topics": 6, "href": "curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "Integração com agentes e processos", "topics": 6, "href": "curso/trilha3/modulo-3-2.html"}]}, {"n": "4", "title": "Qualidade e evolução", "modules": [{"id": "4-1", "title": "Benchmarks, calibração e avaliação", "topics": 6, "href": "curso/trilha4/modulo-4-1.html"}, {"id": "4-2", "title": "Especialização e projeto final", "topics": 6, "href": "curso/trilha4/modulo-4-2.html"}]}]}</script>
+<meta content="Curso prático de Laya e Jev: decisões estruturadas, inferência local, triagem em português e avaliaçêo crítica." name="description"/>
+<title>Fontes e avaliaçêo crítica | Laya &amp; Jev · INEMA</title>
+<script data-inema-manifest="" type="application/json">{"course": "laya-curso", "tracks": [{"n": "1", "title": "Fundamentos", "modules": [{"id": "1-1", "title": "Decidir nêo é conversar", "topics": 6, "href": "curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "As três primitivas", "topics": 6, "href": "curso/trilha1/modulo-1-2.html"}]}, {"n": "2", "title": "Motor local", "modules": [{"id": "2-1", "title": "Instalaçêo e primeira inferência", "topics": 6, "href": "curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Router, contexto e processamento", "topics": 6, "href": "curso/trilha2/modulo-2-2.html"}]}, {"n": "3", "title": "Aplicaçêo prática", "modules": [{"id": "3-1", "title": "Mesa de triagem em português", "topics": 6, "href": "curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "Integraçêo com agentes e processos", "topics": 6, "href": "curso/trilha3/modulo-3-2.html"}]}, {"n": "4", "title": "Qualidade e evoluçêo", "modules": [{"id": "4-1", "title": "Benchmarks, calibraçêo e avaliaçêo", "topics": 6, "href": "curso/trilha4/modulo-4-1.html"}, {"id": "4-2", "title": "Especializaçêo e projeto final", "topics": 6, "href": "curso/trilha4/modulo-4-2.html"}]}]}</script>
 <link href="assets/course.css?v=1.1.0" rel="stylesheet"/>
 <link href="assets/learn.css" rel="stylesheet"/>
 <style>:root{--track:#34d399}</style>
@@ -93,8 +93,8 @@
 <div class="nav-tracks">
 <a class="track-link" href="curso/trilha1/index.html">T1 · Fundamentos</a>
 <a class="track-link" href="curso/trilha2/index.html">T2 · Motor local</a>
-<a class="track-link" href="curso/trilha3/index.html">T3 · Aplicação prática</a>
-<a class="track-link" href="curso/trilha4/index.html">T4 · Qualidade e evolução</a>
+<a class="track-link" href="curso/trilha3/index.html">T3 · Aplicaçêo prática</a>
+<a class="track-link" href="curso/trilha4/index.html">T4 · Qualidade e evoluçêo</a>
 </div>
 <button aria-label="Alternar claro e escuro" id="theme-toggle" onclick="INEMA.setPref('theme',document.documentElement.classList.contains('dark')?'claro':'inema-dark')">☀ / ☾</button>
 </div>
@@ -135,8 +135,8 @@
 </header>
 <section>
 <h2>Material fornecido</h2>
-<p>Dois textos de visão geral e comparação Jev × Laya e três imagens editoriais. Os textos deram o ponto de partida; as afirmações foram confrontadas com o repositório e as fichas atuais.</p>
-<p>O vídeo foi baixado e transcrito integralmente com inemavox e Whisper large-v3: cerca de 26 minutos, 401 segmentos. A transcrição automática confunde ocasionalmente Laya com Leia e ModernBERT com Modern Bird; o curso usa os nomes do código.</p>
+<p>Dois textos de visêo geral e comparaçêo Jev × Laya e três imagens editoriais. Os textos deram o ponto de partida; as afirmações foram confrontadas com o repositório e as fichas atuais.</p>
+<p>O vídeo foi baixado e transcrito integralmente com inemavox e Whisper large-v3: cerca de 26 minutos, 401 segmentos. A transcriçêo automática confunde ocasionalmente Laya com Leia e ModernBERT com Modern Bird; o curso usa os nomes do código.</p>
 <a href="https://www.youtube.com/watch?v=KySbNMsBU70">Vídeo original no YouTube</a>
 </section>
 <section>
@@ -145,15 +145,15 @@
 <li>
 <a href="https://github.com/NandhaKishorM/laya/tree/42626c348753fbb17572a813127df2278a1ec527">Código upstream no commit analisado</a>: SDK, Router, montagem de sequência, confiança e presets.</li>
 <li>
-<a href="https://github.com/NandhaKishorM/laya/blob/42626c348753fbb17572a813127df2278a1ec527/BENCHMARKS.md">Relatório de benchmarks do autor</a>: consultar condições e limitações, não tratar como medição nossa.</li>
+<a href="https://github.com/NandhaKishorM/laya/blob/42626c348753fbb17572a813127df2278a1ec527/BENCHMARKS.md">Relatório de benchmarks do autor</a>: consultar condições e limitações, nêo tratar como mediçêo nossa.</li>
 <li>
-<a href="https://huggingface.co/convaiinnovations/laya-multilingual">Ficha multilingual</a> e <a href="https://huggingface.co/convaiinnovations/laya-typed-decisions">ficha typed-decisions</a>: idiomas, escopo e calibração.</li>
+<a href="https://huggingface.co/convaiinnovations/laya-multilingual">Ficha multilingual</a> e <a href="https://huggingface.co/convaiinnovations/laya-typed-decisions">ficha typed-decisions</a>: idiomas, escopo e calibraçêo.</li>
 <li>
-<a href="https://dev.to/nandakishor_m_6cc0adfde9f/i-built-non-autoregressive-decision-models-a-year-ago-then-a-frontier-lab-called-it-a-18me">Artigo do criador</a>: arquitetura e história; algumas afirmações promocionais são mais fortes que a evidência atual.</li>
+<a href="https://dev.to/nandakishor_m_6cc0adfde9f/i-built-non-autoregressive-decision-models-a-year-ago-then-a-frontier-lab-called-it-a-18me">Artigo do criador</a>: arquitetura e história; algumas afirmações promocionais sêo mais fortes que a evidência atual.</li>
 <li>
 <a href="https://github.com/AbdelStark/jev-benchmarks">AbdelStark/jev-benchmarks</a> e <a href="https://github.com/nibzard/decision-model-benchmark">nibzard/decision-model-benchmark</a>: medições externas de Jev com seus próprios protocolos.</li>
 <li>
-<a href="https://huggingface.co/spaces/convaiinnovations/laya-demo">Demo oficial</a> e <a href="https://pypi.org/project/laya/">pacote PyPI</a>: referências de uso e distribuição.</li>
+<a href="https://huggingface.co/spaces/convaiinnovations/laya-demo">Demo oficial</a> e <a href="https://pypi.org/project/laya/">pacote PyPI</a>: referências de uso e distribuiçêo.</li>
 </ul>
 </section>
 <section>
@@ -162,48 +162,48 @@
 <table>
 <thead>
 <tr>
-<th>Afirmação simplificada</th>
+<th>Afirmaçêo simplificada</th>
 <th>Leitura adotada</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Não gera texto, então não erra.</td>
+<td>Nêo gera texto, entêo nêo erra.</td>
 <td>Saída estruturada evita texto livre, mas pode classificar errado e ficar muito confiante.</td>
 </tr>
 <tr>
 <td>Multilingual tem 135M parâmetros.</td>
-<td>O vídeo cita uma descrição anterior; a ficha atual indica 322M totais, com mmBERT-base.</td>
+<td>O vídeo cita uma descriçêo anterior; a ficha atual indica 322M totais, com mmBERT-base.</td>
 </tr>
 <tr>
 <td>Router sempre escolhe o especialista.</td>
-<td>typed-decisions requer indicação explícita ou auto_task_detection habilitado.</td>
+<td>typed-decisions requer indicaçêo explícita ou auto_task_detection habilitado.</td>
 </tr>
 <tr>
 <td>95% de confiança = 95% de acerto.</td>
-<td>Choice usa entropia normalizada no campo confidence; calibração exige dados.</td>
+<td>Choice usa entropia normalizada no campo confidence; calibraçêo exige dados.</td>
 </tr>
 <tr>
 <td>Laya derrota Jev universalmente.</td>
-<td>Fontes usam prompts, amostras e condições diferentes; treino especializado não equivale a zero-shot.</td>
+<td>Fontes usam prompts, amostras e condições diferentes; treino especializado nêo equivale a zero-shot.</td>
 </tr>
 <tr>
 <td>Fine-tuning no benchmark prova vazamento.</td>
-<td>Treinar no split de treino é legítimo; o problema é comparar capacidades sem explicitar essa preparação. Vazamento de teste exige evidência específica.</td>
+<td>Treinar no split de treino é legítimo; o problema é comparar capacidades sem explicitar essa preparaçêo. Vazamento de teste exige evidência específica.</td>
 </tr>
 <tr>
 <td>Self-hosted tem custo zero.</td>
-<td>Sem cobrança do Laya por chamada, mas com custos de hardware, energia e operação.</td>
+<td>Sem cobrança do Laya por chamada, mas com custos de hardware, energia e operaçêo.</td>
 </tr>
 </tbody>
 </table>
 </div>
 </section>
 <section>
-<h2>Execução local observada</h2>
-<p>Checkpoint multilingual, GPU NVIDIA GB10, quatro perguntas por ticket, 16 mensagens sintéticas balanceadas. Resultado: 13 acertos (81,25%), baseline majoritária 25%, Brier multiclasses somado 0,30835 e ECE top-probability em dez bins 0,17988. A amostra é pequena e não mede confiabilidade de produção.</p>
-<p>Erros preservados: compra de 20 licenças → billing; previsão do tempo → technical; mensagem enviada por engano → technical. Todos os resultados continuam exigindo revisão humana.</p>
-<p>A primeira inferência medida levou 1.401 ms, mesmo depois da carga do modelo; as seguintes variaram entre cerca de 22 e 124 ms neste ensaio. São observações de uma execução, com aquecimento e outras tarefas na máquina, não um benchmark de latência controlado.</p>
+<h2>Execuçêo local observada</h2>
+<p>Checkpoint multilingual, GPU NVIDIA GB10, quatro perguntas por ticket, 16 mensagens sintéticas balanceadas. Resultado: 13 acertos (81,25%), baseline majoritária 25%, Brier multiclasses somado 0,30835 e ECE top-probability em dez bins 0,17988. A amostra é pequena e nêo mede confiabilidade de produçêo.</p>
+<p>Erros preservados: compra de 20 licenças → billing; previsêo do tempo → technical; mensagem enviada por engano → technical. Todos os resultados continuam exigindo revisêo humana.</p>
+<p>A primeira inferência medida levou 1.401 ms, mesmo depois da carga do modelo; as seguintes variaram entre cerca de 22 e 124 ms neste ensaio. Sêo observações de uma execuçêo, com aquecimento e outras tarefas na máquina, nêo um benchmark de latência controlado.</p>
 <a href="https://github.com/inematds/laya/blob/main/docs/avaliacao-local.json">Inspecionar relatório JSON completo</a>
 </section>
 <section>
@@ -215,10 +215,10 @@
 </figure>
 <figure>
 <img alt="Peça editorial Laya is here, open source" loading="lazy" src="assets/img/laya-open.png"/>
-<figcaption>Imagem fornecida: abertura e personalização não eliminam custo operacional.</figcaption>
+<figcaption>Imagem fornecida: abertura e personalizaçêo nêo eliminam custo operacional.</figcaption>
 </figure>
 </div>
-<p>Arquivos integrais de terceiros, vídeo e transcrição ficam no acervo local de pesquisa, fora do Git do curso. As aulas são autorais e apontam para as fontes originais. O curso não executou Jev nem treinou um novo checkpoint.</p>
+<p>Arquivos integrais de terceiros, vídeo e transcriçêo ficam no acervo local de pesquisa, fora do Git do curso. As aulas sêo autorais e apontam para as fontes originais. O curso nêo executou Jev nem treinou um novo checkpoint.</p>
 </section>
 </main>
 <footer>

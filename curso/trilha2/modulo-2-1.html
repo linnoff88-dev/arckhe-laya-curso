@@ -76,9 +76,9 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="laya-curso" name="inema-course"/>
-<meta content="Curso prático de Laya e Jev: decisões estruturadas, inferência local, triagem em português e avaliação crítica." name="description"/>
-<title>Instalação e primeira inferência | Laya &amp; Jev · INEMA</title>
-<script data-inema-manifest="" type="application/json">{"course": "laya-curso", "tracks": [{"n": "1", "title": "Fundamentos", "modules": [{"id": "1-1", "title": "Decidir não é conversar", "topics": 6, "href": "curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "As três primitivas", "topics": 6, "href": "curso/trilha1/modulo-1-2.html"}]}, {"n": "2", "title": "Motor local", "modules": [{"id": "2-1", "title": "Instalação e primeira inferência", "topics": 6, "href": "curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Router, contexto e processamento", "topics": 6, "href": "curso/trilha2/modulo-2-2.html"}]}, {"n": "3", "title": "Aplicação prática", "modules": [{"id": "3-1", "title": "Mesa de triagem em português", "topics": 6, "href": "curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "Integração com agentes e processos", "topics": 6, "href": "curso/trilha3/modulo-3-2.html"}]}, {"n": "4", "title": "Qualidade e evolução", "modules": [{"id": "4-1", "title": "Benchmarks, calibração e avaliação", "topics": 6, "href": "curso/trilha4/modulo-4-1.html"}, {"id": "4-2", "title": "Especialização e projeto final", "topics": 6, "href": "curso/trilha4/modulo-4-2.html"}]}]}</script>
+<meta content="Curso prático de Laya e Jev: decisões estruturadas, inferência local, triagem em português e avaliaçêo crítica." name="description"/>
+<title>Instalaçêo e primeira inferência | Laya &amp; Jev · INEMA</title>
+<script data-inema-manifest="" type="application/json">{"course": "laya-curso", "tracks": [{"n": "1", "title": "Fundamentos", "modules": [{"id": "1-1", "title": "Decidir nêo é conversar", "topics": 6, "href": "curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "As três primitivas", "topics": 6, "href": "curso/trilha1/modulo-1-2.html"}]}, {"n": "2", "title": "Motor local", "modules": [{"id": "2-1", "title": "Instalaçêo e primeira inferência", "topics": 6, "href": "curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Router, contexto e processamento", "topics": 6, "href": "curso/trilha2/modulo-2-2.html"}]}, {"n": "3", "title": "Aplicaçêo prática", "modules": [{"id": "3-1", "title": "Mesa de triagem em português", "topics": 6, "href": "curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "Integraçêo com agentes e processos", "topics": 6, "href": "curso/trilha3/modulo-3-2.html"}]}, {"n": "4", "title": "Qualidade e evoluçêo", "modules": [{"id": "4-1", "title": "Benchmarks, calibraçêo e avaliaçêo", "topics": 6, "href": "curso/trilha4/modulo-4-1.html"}, {"id": "4-2", "title": "Especializaçêo e projeto final", "topics": 6, "href": "curso/trilha4/modulo-4-2.html"}]}]}</script>
 <link href="../../assets/course.css?v=1.1.0" rel="stylesheet"/>
 <link href="../../assets/learn.css" rel="stylesheet"/>
 <style>:root{--track:#60a5fa}</style>
@@ -93,8 +93,8 @@
 <div class="nav-tracks">
 <a class="track-link" href="../../curso/trilha1/index.html">T1 · Fundamentos</a>
 <a class="track-link active" href="../../curso/trilha2/index.html">T2 · Motor local</a>
-<a class="track-link" href="../../curso/trilha3/index.html">T3 · Aplicação prática</a>
-<a class="track-link" href="../../curso/trilha4/index.html">T4 · Qualidade e evolução</a>
+<a class="track-link" href="../../curso/trilha3/index.html">T3 · Aplicaçêo prática</a>
+<a class="track-link" href="../../curso/trilha4/index.html">T4 · Qualidade e evoluçêo</a>
 </div>
 <button aria-label="Alternar claro e escuro" id="theme-toggle" onclick="INEMA.setPref('theme',document.documentElement.classList.contains('dark')?'claro':'inema-dark')">☀ / ☾</button>
 </div>
@@ -132,7 +132,7 @@
 <a href="../../index.html">Início</a> / <a href="index.html">Trilha 2</a> / 2.1</div>
 <header class="module-hero">
 <span class="eyebrow">MÓDULO 2.1</span>
-<h1>Instalação e primeira inferência</h1>
+<h1>Instalaçêo e primeira inferência</h1>
 <p class="lead">Execute pesos reais na sua máquina.</p>
 <div class="stats">
 <span>6 tópicos</span>
@@ -211,9 +211,9 @@
 </div>
 <div class="inema-prose">
 <h3>O que é</h3>
-<p data-inema-block="modulo-2-1-t1-what">O clone contém o SDK e a aplicação prática; os pesos são baixados separadamente do Hugging Face. Um ambiente virtual isola as dependências Python do restante da máquina. O projeto mantém o histórico e a licença do upstream, com a adaptação identificada nos arquivos practical e docs.</p>
+<p data-inema-block="modulo-2-1-t1-what">O clone contém o SDK e a aplicaçêo prática; os pesos sêo baixados separadamente do Hugging Face. Um ambiente virtual isola as dependências Python do restante da máquina. O projeto mantém o histórico e a licença do upstream, com a adaptaçêo identificada nos arquivos practical e docs.</p>
 <h3>Por que aprender</h3>
-<p data-inema-block="modulo-2-1-t1-why">Clonar o Git não baixa automaticamente o checkpoint. A primeira execução pode levar bem mais tempo que uma inferência com o modelo residente. Separe essas duas etapas ao explicar a experiência para outra pessoa ou ao medir a latência.</p>
+<p data-inema-block="modulo-2-1-t1-why">Clonar o Git nêo baixa automaticamente o checkpoint. A primeira execuçêo pode levar bem mais tempo que uma inferência com o modelo residente. Separe essas duas etapas ao explicar a experiência para outra pessoa ou ao medir a latência.</p>
 </div>
 <div class="example">
 <strong>Exemplo aplicado</strong>
@@ -222,12 +222,12 @@
 <div class="comparison">
 <div class="yes bg-emerald-900/20">
 <h3>✓ Aplicar com critério</h3>
-<p>Ela pode baixar arquivos, construir a arquitetura e carregar os pesos. A medição de inferência do laboratório começa depois dessa preparação.</p>
+<p>Ela pode baixar arquivos, construir a arquitetura e carregar os pesos. A mediçêo de inferência do laboratório começa depois dessa preparaçêo.</p>
 </div>
 <div class="no bg-red-900/20">
-<h3>✗ Evitar a conclusão automática</h3>
+<h3>✗ Evitar a conclusêo automática</h3>
 <p>Por que a primeira chamada demora mais?</p>
-<p>Não aceite uma resposta só pelo nome do campo ou pela aparência de precisão. Confira a definição e o contexto desta seção.</p>
+<p>Nêo aceite uma resposta só pelo nome do campo ou pela aparência de precisêo. Confira a definiçêo e o contexto desta seçêo.</p>
 </div>
 </div>
 <h3>Conceitos-chave</h3>
@@ -250,11 +250,11 @@
 </div>
 </div>
 <div class="exercise">
-<h3>Teste sua compreensão</h3>
+<h3>Teste sua compreensêo</h3>
 <p>Por que a primeira chamada demora mais?</p>
 <details>
 <summary>Conferir resposta comentada</summary>
-<p>Ela pode baixar arquivos, construir a arquitetura e carregar os pesos. A medição de inferência do laboratório começa depois dessa preparação.</p>
+<p>Ela pode baixar arquivos, construir a arquitetura e carregar os pesos. A mediçêo de inferência do laboratório começa depois dessa preparaçêo.</p>
 </details>
 </div>
 <div class="toolbar">
@@ -269,9 +269,9 @@
 </div>
 <div class="inema-prose">
 <h3>O que é</h3>
-<p data-inema-block="modulo-2-1-t2-what">A aplicação usa CPU por padrão, permitindo experimentar sem uma GPU compatível. O argumento --device cuda pede aceleração NVIDIA. O SDK pode cair para CPU em algumas falhas; por isso o resultado informa o dispositivo efetivamente usado. O tipo de hardware influencia muito a latência.</p>
+<p data-inema-block="modulo-2-1-t2-what">A aplicaçêo usa CPU por padrêo, permitindo experimentar sem uma GPU compatível. O argumento --device cuda pede aceleraçêo NVIDIA. O SDK pode cair para CPU em algumas falhas; por isso o resultado informa o dispositivo efetivamente usado. O tipo de hardware influencia muito a latência.</p>
 <h3>Por que aprender</h3>
-<p data-inema-block="modulo-2-1-t2-why">Não copie os 33 ms publicados para descrever a sua máquina. Anote versão de Python, PyTorch, transformers, dispositivo, número de perguntas e tamanho das entradas. Com GPU, compatibilidade entre driver, arquitetura e pacote PyTorch importa tanto quanto a quantidade de memória.</p>
+<p data-inema-block="modulo-2-1-t2-why">Nêo copie os 33 ms publicados para descrever a sua máquina. Anote versêo de Python, PyTorch, transformers, dispositivo, número de perguntas e tamanho das entradas. Com GPU, compatibilidade entre driver, arquitetura e pacote PyTorch importa tanto quanto a quantidade de memória.</p>
 </div>
 <div class="example">
 <strong>Exemplo aplicado</strong>
@@ -289,14 +289,14 @@
 <span class="circle">2</span>
 <div>
 <strong>Defina</strong>
-<p>A aplicação usa CPU por padrão, permitindo experimentar sem uma GPU compatível.</p>
+<p>A aplicaçêo usa CPU por padrêo, permitindo experimentar sem uma GPU compatível.</p>
 </div>
 </li>
 <li>
 <span class="circle">3</span>
 <div>
 <strong>Confira</strong>
-<p>Não. Confira runtime.device na resposta e os avisos do terminal. O SDK possui caminhos de fallback para CPU.</p>
+<p>Nêo. Confira runtime.device na resposta e os avisos do terminal. O SDK possui caminhos de fallback para CPU.</p>
 </div>
 </li>
 </ol>
@@ -304,11 +304,11 @@
 <div class="concepts">
 <div>
 <strong>CPU</strong>
-<p>execução geral</p>
+<p>execuçêo geral</p>
 </div>
 <div>
 <strong>CUDA</strong>
-<p>aceleração NVIDIA</p>
+<p>aceleraçêo NVIDIA</p>
 </div>
 <div>
 <strong>Fallback</strong>
@@ -320,11 +320,11 @@
 </div>
 </div>
 <div class="exercise">
-<h3>Teste sua compreensão</h3>
+<h3>Teste sua compreensêo</h3>
 <p>O argumento cuda garante que a inferência aconteceu na GPU?</p>
 <details>
 <summary>Conferir resposta comentada</summary>
-<p>Não. Confira runtime.device na resposta e os avisos do terminal. O SDK possui caminhos de fallback para CPU.</p>
+<p>Nêo. Confira runtime.device na resposta e os avisos do terminal. O SDK possui caminhos de fallback para CPU.</p>
 </details>
 </div>
 <div class="toolbar">
@@ -339,9 +339,9 @@
 </div>
 <div class="inema-prose">
 <h3>O que é</h3>
-<p data-inema-block="modulo-2-1-t3-what">A adaptação pré-carrega apenas multilingual, usando o subdiretório correspondente do repositório de modelos. Isso atende ao laboratório em português sem manter três checkpoints na memória. O comando download carrega o modelo e confirma o dispositivo antes de abrir a interface.</p>
+<p data-inema-block="modulo-2-1-t3-what">A adaptaçêo pré-carrega apenas multilingual, usando o subdiretório correspondente do repositório de modelos. Isso atende ao laboratório em português sem manter três checkpoints na memória. O comando download carrega o modelo e confirma o dispositivo antes de abrir a interface.</p>
 <h3>Por que aprender</h3>
-<p data-inema-block="modulo-2-1-t3-why">Preload de todos os modelos pode ser adequado para tráfego variado, mas aumenta a memória residente. Uma aplicação com escopo linguístico conhecido deve começar com o menor conjunto necessário. Não confunda número de parâmetros com consumo exato de memória em execução.</p>
+<p data-inema-block="modulo-2-1-t3-why">Preload de todos os modelos pode ser adequado para tráfego variado, mas aumenta a memória residente. Uma aplicaçêo com escopo linguístico conhecido deve começar com o menor conjunto necessário. Nêo confunda número de parâmetros com consumo exato de memória em execuçêo.</p>
 </div>
 <div class="example">
 <strong>Exemplo aplicado</strong>
@@ -383,7 +383,7 @@ python3 -m practical triage --message "Quero meu reembolso."</code>
 </div>
 </div>
 <div class="exercise">
-<h3>Teste sua compreensão</h3>
+<h3>Teste sua compreensêo</h3>
 <p>O que ganha quem executa download antes de serve?</p>
 <details>
 <summary>Conferir resposta comentada</summary>
@@ -402,9 +402,9 @@ python3 -m practical triage --message "Quero meu reembolso."</code>
 </div>
 <div class="inema-prose">
 <h3>O que é</h3>
-<p data-inema-block="modulo-2-1-t4-what">O comando triage recebe mensagem e assunto opcional, executa as quatro perguntas e imprime JSON. O resultado inclui answers, routing, usage, runtime e policy. Leia primeiro o departamento sugerido, depois os sinais e as razões da revisão; por fim, confira detalhes de execução.</p>
+<p data-inema-block="modulo-2-1-t4-what">O comando triage recebe mensagem e assunto opcional, executa as quatro perguntas e imprime JSON. O resultado inclui answers, routing, usage, runtime e policy. Leia primeiro o departamento sugerido, depois os sinais e as razões da revisêo; por fim, confira detalhes de execuçêo.</p>
 <h3>Por que aprender</h3>
-<p data-inema-block="modulo-2-1-t4-why">O comando deve encerrar com erro quando a entrada é inválida ou o modelo falha. Isso permite integrar a ferramenta a scripts sem confundir indisponibilidade com uma recomendação válida. Preserve a saída JSON de um teste bem-sucedido como evidência de instalação.</p>
+<p data-inema-block="modulo-2-1-t4-why">O comando deve encerrar com erro quando a entrada é inválida ou o modelo falha. Isso permite integrar a ferramenta a scripts sem confundir indisponibilidade com uma recomendaçêo válida. Preserve a saída JSON de um teste bem-sucedido como evidência de instalaçêo.</p>
 </div>
 <div class="example">
 <strong>Exemplo aplicado</strong>
@@ -413,12 +413,12 @@ python3 -m practical triage --message "Quero meu reembolso."</code>
 <div class="comparison">
 <div class="yes bg-emerald-900/20">
 <h3>✓ Aplicar com critério</h3>
-<p>Nenhum: o laboratório não devolve dinheiro. automated_action_executed permanece false e a ação operacional é human_review.</p>
+<p>Nenhum: o laboratório nêo devolve dinheiro. automated_action_executed permanece false e a açêo operacional é human_review.</p>
 </div>
 <div class="no bg-red-900/20">
-<h3>✗ Evitar a conclusão automática</h3>
+<h3>✗ Evitar a conclusêo automática</h3>
 <p>Qual campo informa que dinheiro foi devolvido?</p>
-<p>Não aceite uma resposta só pelo nome do campo ou pela aparência de precisão. Confira a definição e o contexto desta seção.</p>
+<p>Nêo aceite uma resposta só pelo nome do campo ou pela aparência de precisêo. Confira a definiçêo e o contexto desta seçêo.</p>
 </div>
 </div>
 <h3>Conceitos-chave</h3>
@@ -437,15 +437,15 @@ python3 -m practical triage --message "Quero meu reembolso."</code>
 </div>
 <div>
 <strong>Policy</strong>
-<p>decisão operacional</p>
+<p>decisêo operacional</p>
 </div>
 </div>
 <div class="exercise">
-<h3>Teste sua compreensão</h3>
+<h3>Teste sua compreensêo</h3>
 <p>Qual campo informa que dinheiro foi devolvido?</p>
 <details>
 <summary>Conferir resposta comentada</summary>
-<p>Nenhum: o laboratório não devolve dinheiro. automated_action_executed permanece false e a ação operacional é human_review.</p>
+<p>Nenhum: o laboratório nêo devolve dinheiro. automated_action_executed permanece false e a açêo operacional é human_review.</p>
 </details>
 </div>
 <div class="toolbar">
@@ -460,9 +460,9 @@ python3 -m practical triage --message "Quero meu reembolso."</code>
 </div>
 <div class="inema-prose">
 <h3>O que é</h3>
-<p data-inema-block="modulo-2-1-t5-what">O fork parte do commit upstream registrado na documentação. A adaptação incrementa a versão de 0.3.4 para 0.4.4 conforme a convenção do projeto, mantendo o patch ao aumentar o minor. Código, ambiente e checkpoint são três identidades diferentes que devem acompanhar uma avaliação.</p>
+<p data-inema-block="modulo-2-1-t5-what">O fork parte do commit upstream registrado na documentaçêo. A adaptaçêo incrementa a versêo de 0.3.4 para 0.4.4 conforme a convençêo do projeto, mantendo o patch ao aumentar o minor. Código, ambiente e checkpoint sêo três identidades diferentes que devem acompanhar uma avaliaçêo.</p>
 <h3>Por que aprender</h3>
-<p data-inema-block="modulo-2-1-t5-why">Se um resultado mudar, compare primeiro essas identidades. Pesos remotos podem evoluir mesmo com o mesmo nome de repositório. Para experimentos formais, fixe uma revisão do modelo ou preserve um snapshot local e use --model-path para carregá-lo.</p>
+<p data-inema-block="modulo-2-1-t5-why">Se um resultado mudar, compare primeiro essas identidades. Pesos remotos podem evoluir mesmo com o mesmo nome de repositório. Para experimentos formais, fixe uma revisêo do modelo ou preserve um snapshot local e use --model-path para carregá-lo.</p>
 </div>
 <div class="example">
 <strong>Exemplo aplicado</strong>
@@ -470,33 +470,33 @@ python3 -m practical triage --message "Quero meu reembolso."</code>
 </div>
 <aside class="tip bg-primary/10 border-primary/30">
 <h3>Dica prática</h3>
-<p>Não. Registre também revisão dos pesos, versão do código, dependências, esquema, dados e condições de execução.</p>
+<p>Nêo. Registre também revisêo dos pesos, versêo do código, dependências, esquema, dados e condições de execuçêo.</p>
 </aside>
 <h3>Conceitos-chave</h3>
 <div class="concepts">
 <div>
-<strong>Revisão</strong>
+<strong>Revisêo</strong>
 <p>commit exato</p>
 </div>
 <div>
 <strong>Snapshot</strong>
-<p>versão dos pesos</p>
+<p>versêo dos pesos</p>
 </div>
 <div>
 <strong>Dependência</strong>
 <p>biblioteca</p>
 </div>
 <div>
-<strong>Reprodução</strong>
+<strong>Reproduçêo</strong>
 <p>repetir condições</p>
 </div>
 </div>
 <div class="exercise">
-<h3>Teste sua compreensão</h3>
+<h3>Teste sua compreensêo</h3>
 <p>Basta registrar o nome laya-multilingual para reproduzir um resultado?</p>
 <details>
 <summary>Conferir resposta comentada</summary>
-<p>Não. Registre também revisão dos pesos, versão do código, dependências, esquema, dados e condições de execução.</p>
+<p>Nêo. Registre também revisêo dos pesos, versêo do código, dependências, esquema, dados e condições de execuçêo.</p>
 </details>
 </div>
 <div class="toolbar">
@@ -511,13 +511,13 @@ python3 -m practical triage --message "Quero meu reembolso."</code>
 </div>
 <div class="inema-prose">
 <h3>O que é</h3>
-<p data-inema-block="modulo-2-1-t6-what">Comece identificando a camada da falha: importação, download, carregamento, tokenização ou forward pass. USE_TF=0 é uma orientação do upstream para evitar sondagens de TensorFlow em ambientes problemáticos. Falha de rede não se resolve alterando perguntas; erro de entrada não exige reinstalar o modelo.</p>
+<p data-inema-block="modulo-2-1-t6-what">Comece identificando a camada da falha: importaçêo, download, carregamento, tokenizaçêo ou forward pass. USE_TF=0 é uma orientaçêo do upstream para evitar sondagens de TensorFlow em ambientes problemáticos. Falha de rede nêo se resolve alterando perguntas; erro de entrada nêo exige reinstalar o modelo.</p>
 <h3>Por que aprender</h3>
-<p data-inema-block="modulo-2-1-t6-why">O laboratório expõe falhas na API e não inventa uma classificação substituta. Mantenha o log técnico no terminal e uma mensagem objetiva na interface. Depois de corrigir, repita o menor teste que percorre a etapa afetada, seguido de uma inferência real.</p>
+<p data-inema-block="modulo-2-1-t6-why">O laboratório expõe falhas na API e nêo inventa uma classificaçêo substituta. Mantenha o log técnico no terminal e uma mensagem objetiva na interface. Depois de corrigir, repita o menor teste que percorre a etapa afetada, seguido de uma inferência real.</p>
 </div>
 <div class="example">
 <strong>Exemplo aplicado</strong>
-<p data-inema-block="modulo-2-1-t6-example">Download falhou: teste acesso ao checkpoint. Texto excedeu tokens: reduza a entrada. Resultado ruim: revise esquema e avaliação.</p>
+<p data-inema-block="modulo-2-1-t6-example">Download falhou: teste acesso ao checkpoint. Texto excedeu tokens: reduza a entrada. Resultado ruim: revise esquema e avaliaçêo.</p>
 </div>
 <h3>Conceitos-chave</h3>
 <div class="concepts">
@@ -526,12 +526,12 @@ python3 -m practical triage --message "Quero meu reembolso."</code>
 <p>localizar camada</p>
 </div>
 <div>
-<strong>Correção mínima</strong>
-<p>intervenção local</p>
+<strong>Correçêo mínima</strong>
+<p>intervençêo local</p>
 </div>
 <div>
 <strong>Smoke test</strong>
-<p>execução curta</p>
+<p>execuçêo curta</p>
 </div>
 <div>
 <strong>Erro explícito</strong>
@@ -539,11 +539,11 @@ python3 -m practical triage --message "Quero meu reembolso."</code>
 </div>
 </div>
 <div class="exercise">
-<h3>Teste sua compreensão</h3>
+<h3>Teste sua compreensêo</h3>
 <p>Se o modelo classifica mal um texto, devo reinstalar tudo?</p>
 <details>
 <summary>Conferir resposta comentada</summary>
-<p>Não. Primeiro confirme checkpoint, idioma e esquema. Depois compare com exemplos rotulados; reinstalação só faz sentido se houver evidência de ambiente quebrado.</p>
+<p>Nêo. Primeiro confirme checkpoint, idioma e esquema. Depois compare com exemplos rotulados; reinstalaçêo só faz sentido se houver evidência de ambiente quebrado.</p>
 </details>
 </div>
 <div class="toolbar">
@@ -554,9 +554,9 @@ python3 -m practical triage --message "Quero meu reembolso."</code>
 <section class="summary">
 <h2>Resumo do módulo</h2>
 <ul>
-<li>Ela pode baixar arquivos, construir a arquitetura e carregar os pesos. A medição de inferência do laboratório começa depois dessa preparação.</li>
+<li>Ela pode baixar arquivos, construir a arquitetura e carregar os pesos. A mediçêo de inferência do laboratório começa depois dessa preparaçêo.</li>
 <li>Os arquivos ficam no cache e problemas de download aparecem antes do atendimento. O processo serve ainda precisa carregar os pesos na própria memória.</li>
-<li>Não. Registre também revisão dos pesos, versão do código, dependências, esquema, dados e condições de execução.</li>
+<li>Nêo. Registre também revisêo dos pesos, versêo do código, dependências, esquema, dados e condições de execuçêo.</li>
 </ul>
 <p>Selecione um trecho da aula para destacar ou anotar. Dúvidas e notas ficam na sua jornada; exporte o JSON para fazer backup.</p>
 <div class="toolbar">

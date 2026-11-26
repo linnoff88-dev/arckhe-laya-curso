@@ -76,9 +76,9 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="laya-curso" name="inema-course"/>
-<meta content="Curso prático de Laya e Jev: decisões estruturadas, inferência local, triagem em português e avaliação crítica." name="description"/>
+<meta content="Curso prático de Laya e Jev: decisões estruturadas, inferência local, triagem em português e avaliaçêo crítica." name="description"/>
 <title>Motor local | Laya &amp; Jev · INEMA</title>
-<script data-inema-manifest="" type="application/json">{"course": "laya-curso", "tracks": [{"n": "1", "title": "Fundamentos", "modules": [{"id": "1-1", "title": "Decidir não é conversar", "topics": 6, "href": "curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "As três primitivas", "topics": 6, "href": "curso/trilha1/modulo-1-2.html"}]}, {"n": "2", "title": "Motor local", "modules": [{"id": "2-1", "title": "Instalação e primeira inferência", "topics": 6, "href": "curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Router, contexto e processamento", "topics": 6, "href": "curso/trilha2/modulo-2-2.html"}]}, {"n": "3", "title": "Aplicação prática", "modules": [{"id": "3-1", "title": "Mesa de triagem em português", "topics": 6, "href": "curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "Integração com agentes e processos", "topics": 6, "href": "curso/trilha3/modulo-3-2.html"}]}, {"n": "4", "title": "Qualidade e evolução", "modules": [{"id": "4-1", "title": "Benchmarks, calibração e avaliação", "topics": 6, "href": "curso/trilha4/modulo-4-1.html"}, {"id": "4-2", "title": "Especialização e projeto final", "topics": 6, "href": "curso/trilha4/modulo-4-2.html"}]}]}</script>
+<script data-inema-manifest="" type="application/json">{"course": "laya-curso", "tracks": [{"n": "1", "title": "Fundamentos", "modules": [{"id": "1-1", "title": "Decidir nêo é conversar", "topics": 6, "href": "curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "As três primitivas", "topics": 6, "href": "curso/trilha1/modulo-1-2.html"}]}, {"n": "2", "title": "Motor local", "modules": [{"id": "2-1", "title": "Instalaçêo e primeira inferência", "topics": 6, "href": "curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Router, contexto e processamento", "topics": 6, "href": "curso/trilha2/modulo-2-2.html"}]}, {"n": "3", "title": "Aplicaçêo prática", "modules": [{"id": "3-1", "title": "Mesa de triagem em português", "topics": 6, "href": "curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "Integraçêo com agentes e processos", "topics": 6, "href": "curso/trilha3/modulo-3-2.html"}]}, {"n": "4", "title": "Qualidade e evoluçêo", "modules": [{"id": "4-1", "title": "Benchmarks, calibraçêo e avaliaçêo", "topics": 6, "href": "curso/trilha4/modulo-4-1.html"}, {"id": "4-2", "title": "Especializaçêo e projeto final", "topics": 6, "href": "curso/trilha4/modulo-4-2.html"}]}]}</script>
 <link href="../../assets/course.css?v=1.1.0" rel="stylesheet"/>
 <link href="../../assets/learn.css" rel="stylesheet"/>
 <style>:root{--track:#60a5fa}</style>
@@ -93,8 +93,8 @@
 <div class="nav-tracks">
 <a class="track-link" href="../../curso/trilha1/index.html">T1 · Fundamentos</a>
 <a class="track-link active" href="../../curso/trilha2/index.html">T2 · Motor local</a>
-<a class="track-link" href="../../curso/trilha3/index.html">T3 · Aplicação prática</a>
-<a class="track-link" href="../../curso/trilha4/index.html">T4 · Qualidade e evolução</a>
+<a class="track-link" href="../../curso/trilha3/index.html">T3 · Aplicaçêo prática</a>
+<a class="track-link" href="../../curso/trilha4/index.html">T4 · Qualidade e evoluçêo</a>
 </div>
 <button aria-label="Alternar claro e escuro" id="theme-toggle" onclick="INEMA.setPref('theme',document.documentElement.classList.contains('dark')?'claro':'inema-dark')">☀ / ☾</button>
 </div>
@@ -181,7 +181,7 @@
 <span>2.1</span>
 <span>35–50 min</span>
 </div>
-<h3>⚙️ Instalação e primeira inferência</h3>
+<h3>⚙️ Instalaçêo e primeira inferência</h3>
 <p>Execute pesos reais na sua máquina.</p>
 </a>
 <a class="card" href="#modulo-2-2">
@@ -196,16 +196,16 @@
 <h2 class="text-2xl font-bold mb-6">Conteúdo detalhado</h2>
 <section class="module-card bg-dark-800 border-dark-600" id="modulo-2-1">
 <span class="eyebrow">MÓDULO 2.1</span>
-<h3 class="text-2xl font-bold">Instalação e primeira inferência</h3>
+<h3 class="text-2xl font-bold">Instalaçêo e primeira inferência</h3>
 <p>Execute pesos reais na sua máquina.</p>
 <div class="topic-item">
 <button aria-controls="panel-2-1-1" aria-expanded="true" class="accordion justify-start" onclick="toggleTopic(this)">
 <span class="circle">1</span>Código, ambiente e pesos</button>
 <div class="topic-explanation" id="panel-2-1-1">
 <h4>O que é</h4>
-<p>O clone contém o SDK e a aplicação prática; os pesos são baixados separadamente do Hugging Face.</p>
+<p>O clone contém o SDK e a aplicaçêo prática; os pesos sêo baixados separadamente do Hugging Face.</p>
 <h4>Por que aprender</h4>
-<p>Clonar o Git não baixa automaticamente o checkpoint.</p>
+<p>Clonar o Git nêo baixa automaticamente o checkpoint.</p>
 <h3>Conceitos-chave</h3>
 <div class="concepts">
 <div>
@@ -232,18 +232,18 @@
 <span class="circle">2</span>Escolha CPU ou GPU conscientemente</button>
 <div class="topic-explanation" id="panel-2-1-2">
 <h4>O que é</h4>
-<p>A aplicação usa CPU por padrão, permitindo experimentar sem uma GPU compatível.</p>
+<p>A aplicaçêo usa CPU por padrêo, permitindo experimentar sem uma GPU compatível.</p>
 <h4>Por que aprender</h4>
-<p>Não copie os 33 ms publicados para descrever a sua máquina.</p>
+<p>Nêo copie os 33 ms publicados para descrever a sua máquina.</p>
 <h3>Conceitos-chave</h3>
 <div class="concepts">
 <div>
 <strong>CPU</strong>
-<p>execução geral</p>
+<p>execuçêo geral</p>
 </div>
 <div>
 <strong>CUDA</strong>
-<p>aceleração NVIDIA</p>
+<p>aceleraçêo NVIDIA</p>
 </div>
 <div>
 <strong>Fallback</strong>
@@ -261,7 +261,7 @@
 <span class="circle">3</span>Baixe apenas o modelo necessário</button>
 <div class="topic-explanation" id="panel-2-1-3">
 <h4>O que é</h4>
-<p>A adaptação pré-carrega apenas multilingual, usando o subdiretório correspondente do repositório de modelos.</p>
+<p>A adaptaçêo pré-carrega apenas multilingual, usando o subdiretório correspondente do repositório de modelos.</p>
 <h4>Por que aprender</h4>
 <p>Preload de todos os modelos pode ser adequado para tráfego variado, mas aumenta a memória residente.</p>
 <h3>Conceitos-chave</h3>
@@ -309,7 +309,7 @@
 </div>
 <div>
 <strong>Policy</strong>
-<p>decisão operacional</p>
+<p>decisêo operacional</p>
 </div>
 </div>
 </div>
@@ -319,25 +319,25 @@
 <span class="circle">5</span>Confira as versões e a proveniência</button>
 <div class="topic-explanation" id="panel-2-1-5">
 <h4>O que é</h4>
-<p>O fork parte do commit upstream registrado na documentação.</p>
+<p>O fork parte do commit upstream registrado na documentaçêo.</p>
 <h4>Por que aprender</h4>
 <p>Se um resultado mudar, compare primeiro essas identidades.</p>
 <h3>Conceitos-chave</h3>
 <div class="concepts">
 <div>
-<strong>Revisão</strong>
+<strong>Revisêo</strong>
 <p>commit exato</p>
 </div>
 <div>
 <strong>Snapshot</strong>
-<p>versão dos pesos</p>
+<p>versêo dos pesos</p>
 </div>
 <div>
 <strong>Dependência</strong>
 <p>biblioteca</p>
 </div>
 <div>
-<strong>Reprodução</strong>
+<strong>Reproduçêo</strong>
 <p>repetir condições</p>
 </div>
 </div>
@@ -348,9 +348,9 @@
 <span class="circle">6</span>Resolva falhas sem reconstruir tudo</button>
 <div class="topic-explanation" id="panel-2-1-6">
 <h4>O que é</h4>
-<p>Comece identificando a camada da falha: importação, download, carregamento, tokenização ou forward pass.</p>
+<p>Comece identificando a camada da falha: importaçêo, download, carregamento, tokenizaçêo ou forward pass.</p>
 <h4>Por que aprender</h4>
-<p>O laboratório expõe falhas na API e não inventa uma classificação substituta.</p>
+<p>O laboratório expõe falhas na API e nêo inventa uma classificaçêo substituta.</p>
 <h3>Conceitos-chave</h3>
 <div class="concepts">
 <div>
@@ -358,12 +358,12 @@
 <p>localizar camada</p>
 </div>
 <div>
-<strong>Correção mínima</strong>
-<p>intervenção local</p>
+<strong>Correçêo mínima</strong>
+<p>intervençêo local</p>
 </div>
 <div>
 <strong>Smoke test</strong>
-<p>execução curta</p>
+<p>execuçêo curta</p>
 </div>
 <div>
 <strong>Erro explícito</strong>
@@ -393,11 +393,11 @@
 <div class="concepts">
 <div>
 <strong>Roteamento</strong>
-<p>seleção prévia</p>
+<p>seleçêo prévia</p>
 </div>
 <div>
 <strong>Override</strong>
-<p>indicação explícita</p>
+<p>indicaçêo explícita</p>
 </div>
 <div>
 <strong>Script</strong>
@@ -415,9 +415,9 @@
 <span class="circle">2</span>Português precisa de escolha explícita no laboratório</button>
 <div class="topic-explanation" id="panel-2-2-2">
 <h4>O que é</h4>
-<p>Português usa alfabeto latino, como inglês, e mensagens muito curtas oferecem pouca evidência para detecção automática.</p>
+<p>Português usa alfabeto latino, como inglês, e mensagens muito curtas oferecem pouca evidência para detecçêo automática.</p>
 <h4>Por que aprender</h4>
-<p>Uma regra simples baseada em informação confiável do produto pode superar uma heurística de idioma.</p>
+<p>Uma regra simples baseada em informaçêo confiável do produto pode superar uma heurística de idioma.</p>
 <h3>Conceitos-chave</h3>
 <div class="concepts">
 <div>
@@ -430,7 +430,7 @@
 </div>
 <div>
 <strong>Heurística</strong>
-<p>aproximação</p>
+<p>aproximaçêo</p>
 </div>
 <div>
 <strong>Contrato linguístico</strong>
@@ -484,14 +484,14 @@
 </div>
 <div>
 <strong>Hierarquia</strong>
-<p>etapas de seleção</p>
+<p>etapas de seleçêo</p>
 </div>
 <div>
-<strong>Propagação</strong>
+<strong>Propagaçêo</strong>
 <p>erro encadeado</p>
 </div>
 <div>
-<strong>Descrição</strong>
+<strong>Descriçêo</strong>
 <p>sinal discriminativo</p>
 </div>
 </div>
@@ -502,7 +502,7 @@
 <span class="circle">5</span>Modelo residente e alternância de idioma</button>
 <div class="topic-explanation" id="panel-2-2-5">
 <h4>O que é</h4>
-<p>O Router padrão mantém poucos modelos quentes e pode descartar o menos recente.</p>
+<p>O Router padrêo mantém poucos modelos quentes e pode descartar o menos recente.</p>
 <h4>Por que aprender</h4>
 <p>Medições devem distinguir o caminho quente da primeira carga e das trocas.</p>
 <h3>Conceitos-chave</h3>
@@ -533,7 +533,7 @@
 <h4>O que é</h4>
 <p>Laya agrupa as perguntas de um estado em uma chamada.</p>
 <h4>Por que aprender</h4>
-<p>Comparar milissegundos sem declarar fronteiras de medição gera conclusões frágeis.</p>
+<p>Comparar milissegundos sem declarar fronteiras de mediçêo gera conclusões frágeis.</p>
 <h3>Conceitos-chave</h3>
 <div class="concepts">
 <div>

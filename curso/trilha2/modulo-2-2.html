@@ -76,9 +76,9 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="laya-curso" name="inema-course"/>
-<meta content="Curso prático de Laya e Jev: decisões estruturadas, inferência local, triagem em português e avaliação crítica." name="description"/>
+<meta content="Curso prático de Laya e Jev: decisões estruturadas, inferência local, triagem em português e avaliaçêo crítica." name="description"/>
 <title>Router, contexto e processamento | Laya &amp; Jev · INEMA</title>
-<script data-inema-manifest="" type="application/json">{"course": "laya-curso", "tracks": [{"n": "1", "title": "Fundamentos", "modules": [{"id": "1-1", "title": "Decidir não é conversar", "topics": 6, "href": "curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "As três primitivas", "topics": 6, "href": "curso/trilha1/modulo-1-2.html"}]}, {"n": "2", "title": "Motor local", "modules": [{"id": "2-1", "title": "Instalação e primeira inferência", "topics": 6, "href": "curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Router, contexto e processamento", "topics": 6, "href": "curso/trilha2/modulo-2-2.html"}]}, {"n": "3", "title": "Aplicação prática", "modules": [{"id": "3-1", "title": "Mesa de triagem em português", "topics": 6, "href": "curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "Integração com agentes e processos", "topics": 6, "href": "curso/trilha3/modulo-3-2.html"}]}, {"n": "4", "title": "Qualidade e evolução", "modules": [{"id": "4-1", "title": "Benchmarks, calibração e avaliação", "topics": 6, "href": "curso/trilha4/modulo-4-1.html"}, {"id": "4-2", "title": "Especialização e projeto final", "topics": 6, "href": "curso/trilha4/modulo-4-2.html"}]}]}</script>
+<script data-inema-manifest="" type="application/json">{"course": "laya-curso", "tracks": [{"n": "1", "title": "Fundamentos", "modules": [{"id": "1-1", "title": "Decidir nêo é conversar", "topics": 6, "href": "curso/trilha1/modulo-1-1.html"}, {"id": "1-2", "title": "As três primitivas", "topics": 6, "href": "curso/trilha1/modulo-1-2.html"}]}, {"n": "2", "title": "Motor local", "modules": [{"id": "2-1", "title": "Instalaçêo e primeira inferência", "topics": 6, "href": "curso/trilha2/modulo-2-1.html"}, {"id": "2-2", "title": "Router, contexto e processamento", "topics": 6, "href": "curso/trilha2/modulo-2-2.html"}]}, {"n": "3", "title": "Aplicaçêo prática", "modules": [{"id": "3-1", "title": "Mesa de triagem em português", "topics": 6, "href": "curso/trilha3/modulo-3-1.html"}, {"id": "3-2", "title": "Integraçêo com agentes e processos", "topics": 6, "href": "curso/trilha3/modulo-3-2.html"}]}, {"n": "4", "title": "Qualidade e evoluçêo", "modules": [{"id": "4-1", "title": "Benchmarks, calibraçêo e avaliaçêo", "topics": 6, "href": "curso/trilha4/modulo-4-1.html"}, {"id": "4-2", "title": "Especializaçêo e projeto final", "topics": 6, "href": "curso/trilha4/modulo-4-2.html"}]}]}</script>
 <link href="../../assets/course.css?v=1.1.0" rel="stylesheet"/>
 <link href="../../assets/learn.css" rel="stylesheet"/>
 <style>:root{--track:#60a5fa}</style>
@@ -93,8 +93,8 @@
 <div class="nav-tracks">
 <a class="track-link" href="../../curso/trilha1/index.html">T1 · Fundamentos</a>
 <a class="track-link active" href="../../curso/trilha2/index.html">T2 · Motor local</a>
-<a class="track-link" href="../../curso/trilha3/index.html">T3 · Aplicação prática</a>
-<a class="track-link" href="../../curso/trilha4/index.html">T4 · Qualidade e evolução</a>
+<a class="track-link" href="../../curso/trilha3/index.html">T3 · Aplicaçêo prática</a>
+<a class="track-link" href="../../curso/trilha4/index.html">T4 · Qualidade e evoluçêo</a>
 </div>
 <button aria-label="Alternar claro e escuro" id="theme-toggle" onclick="INEMA.setPref('theme',document.documentElement.classList.contains('dark')?'claro':'inema-dark')">☀ / ☾</button>
 </div>
@@ -211,9 +211,9 @@
 </div>
 <div class="inema-prose">
 <h3>O que é</h3>
-<p data-inema-block="modulo-2-2-t1-what">Router.route pode selecionar um checkpoint sem executar a rede neural. A decisão usa indicação explícita de modelo ou tarefa, configuração opcional de workflow, idioma informado e detecção de escrita ou idioma. Isso evita usar apenas a confiança posterior como defesa contra um modelo que não entende o texto.</p>
+<p data-inema-block="modulo-2-2-t1-what">Router.route pode selecionar um checkpoint sem executar a rede neural. A decisêo usa indicaçêo explícita de modelo ou tarefa, configuraçêo opcional de workflow, idioma informado e detecçêo de escrita ou idioma. Isso evita usar apenas a confiança posterior como defesa contra um modelo que nêo entende o texto.</p>
 <h3>Por que aprender</h3>
-<p data-inema-block="modulo-2-2-t1-why">O código atual deve prevalecer sobre diagramas simplificados. typed-decisions não é selecionado automaticamente por padrão. Ativar auto_task_detection faz correspondência exata dos identificadores de quatro workflows; isso não é um entendimento universal do domínio.</p>
+<p data-inema-block="modulo-2-2-t1-why">O código atual deve prevalecer sobre diagramas simplificados. typed-decisions nêo é selecionado automaticamente por padrêo. Ativar auto_task_detection faz correspondência exata dos identificadores de quatro workflows; isso nêo é um entendimento universal do domínio.</p>
 </div>
 <div class="example">
 <strong>Exemplo aplicado</strong>
@@ -222,23 +222,23 @@
 <div class="comparison">
 <div class="yes bg-emerald-900/20">
 <h3>✓ Aplicar com critério</h3>
-<p>Não. A detecção opcional exige o conjunto exato de identificadores de um workflow, e vem desabilitada por padrão.</p>
+<p>Nêo. A detecçêo opcional exige o conjunto exato de identificadores de um workflow, e vem desabilitada por padrêo.</p>
 </div>
 <div class="no bg-red-900/20">
-<h3>✗ Evitar a conclusão automática</h3>
+<h3>✗ Evitar a conclusêo automática</h3>
 <p>Um campo urgency é suficiente para selecionar typed-decisions?</p>
-<p>Não aceite uma resposta só pelo nome do campo ou pela aparência de precisão. Confira a definição e o contexto desta seção.</p>
+<p>Nêo aceite uma resposta só pelo nome do campo ou pela aparência de precisêo. Confira a definiçêo e o contexto desta seçêo.</p>
 </div>
 </div>
 <h3>Conceitos-chave</h3>
 <div class="concepts">
 <div>
 <strong>Roteamento</strong>
-<p>seleção prévia</p>
+<p>seleçêo prévia</p>
 </div>
 <div>
 <strong>Override</strong>
-<p>indicação explícita</p>
+<p>indicaçêo explícita</p>
 </div>
 <div>
 <strong>Script</strong>
@@ -250,11 +250,11 @@
 </div>
 </div>
 <div class="exercise">
-<h3>Teste sua compreensão</h3>
+<h3>Teste sua compreensêo</h3>
 <p>Um campo urgency é suficiente para selecionar typed-decisions?</p>
 <details>
 <summary>Conferir resposta comentada</summary>
-<p>Não. A detecção opcional exige o conjunto exato de identificadores de um workflow, e vem desabilitada por padrão.</p>
+<p>Nêo. A detecçêo opcional exige o conjunto exato de identificadores de um workflow, e vem desabilitada por padrêo.</p>
 </details>
 </div>
 <div class="toolbar">
@@ -269,34 +269,34 @@
 </div>
 <div class="inema-prose">
 <h3>O que é</h3>
-<p data-inema-block="modulo-2-2-t2-what">Português usa alfabeto latino, como inglês, e mensagens muito curtas oferecem pouca evidência para detecção automática. Como o contrato deste laboratório já declara atendimento em português, a implementação fixa multilingual. O SDK continua disponível para quem quiser experimentar roteamento dinâmico em outro fluxo.</p>
+<p data-inema-block="modulo-2-2-t2-what">Português usa alfabeto latino, como inglês, e mensagens muito curtas oferecem pouca evidência para detecçêo automática. Como o contrato deste laboratório já declara atendimento em português, a implementaçêo fixa multilingual. O SDK continua disponível para quem quiser experimentar roteamento dinâmico em outro fluxo.</p>
 <h3>Por que aprender</h3>
-<p data-inema-block="modulo-2-2-t2-why">Uma regra simples baseada em informação confiável do produto pode superar uma heurística de idioma. Se a interface sabe que a fila é brasileira, não precisa adivinhar isso em cada ticket. Teste separadamente abreviações, erros de digitação e mensagens misturadas.</p>
+<p data-inema-block="modulo-2-2-t2-why">Uma regra simples baseada em informaçêo confiável do produto pode superar uma heurística de idioma. Se a interface sabe que a fila é brasileira, nêo precisa adivinhar isso em cada ticket. Teste separadamente abreviações, erros de digitaçêo e mensagens misturadas.</p>
 </div>
 <div class="example">
 <strong>Exemplo aplicado</strong>
-<p data-inema-block="modulo-2-2-t2-example">Olá contém pouca informação; a fila de atendimento define o checkpoint, não a confiança de uma previsão posterior.</p>
+<p data-inema-block="modulo-2-2-t2-example">Olá contém pouca informaçêo; a fila de atendimento define o checkpoint, nêo a confiança de uma previsêo posterior.</p>
 </div>
 <ol class="timeline">
 <li>
 <span class="circle">1</span>
 <div>
 <strong>Observe</strong>
-<p>Olá contém pouca informação; a fila de atendimento define o checkpoint, não a confiança de uma previsão posterior.</p>
+<p>Olá contém pouca informaçêo; a fila de atendimento define o checkpoint, nêo a confiança de uma previsêo posterior.</p>
 </div>
 </li>
 <li>
 <span class="circle">2</span>
 <div>
 <strong>Defina</strong>
-<p>Português usa alfabeto latino, como inglês, e mensagens muito curtas oferecem pouca evidência para detecção automática.</p>
+<p>Português usa alfabeto latino, como inglês, e mensagens muito curtas oferecem pouca evidência para detecçêo automática.</p>
 </div>
 </li>
 <li>
 <span class="circle">3</span>
 <div>
 <strong>Confira</strong>
-<p>Não. Cobertura declarada de idiomas não garante desempenho no vocabulário, nos produtos e nas expressões dos seus clientes.</p>
+<p>Nêo. Cobertura declarada de idiomas nêo garante desempenho no vocabulário, nos produtos e nas expressões dos seus clientes.</p>
 </div>
 </li>
 </ol>
@@ -312,7 +312,7 @@
 </div>
 <div>
 <strong>Heurística</strong>
-<p>aproximação</p>
+<p>aproximaçêo</p>
 </div>
 <div>
 <strong>Contrato linguístico</strong>
@@ -320,11 +320,11 @@
 </div>
 </div>
 <div class="exercise">
-<h3>Teste sua compreensão</h3>
+<h3>Teste sua compreensêo</h3>
 <p>O modelo multilíngue dispensa testes em português?</p>
 <details>
 <summary>Conferir resposta comentada</summary>
-<p>Não. Cobertura declarada de idiomas não garante desempenho no vocabulário, nos produtos e nas expressões dos seus clientes.</p>
+<p>Nêo. Cobertura declarada de idiomas nêo garante desempenho no vocabulário, nos produtos e nas expressões dos seus clientes.</p>
 </details>
 </div>
 <div class="toolbar">
@@ -339,17 +339,17 @@
 </div>
 <div class="inema-prose">
 <h3>O que é</h3>
-<p data-inema-block="modulo-2-2-t3-what">O prompt interno reserva espaço para pergunta e opções; o restante acomoda o estado. O checkpoint multilingual usa normalmente max_len 1024 e head_max_len 256. Esses números não equivalem a caracteres nem asseguram que qualquer documento com menos de 1024 palavras caiba.</p>
+<p data-inema-block="modulo-2-2-t3-what">O prompt interno reserva espaço para pergunta e opções; o restante acomoda o estado. O checkpoint multilingual usa normalmente max_len 1024 e head_max_len 256. Esses números nêo equivalem a caracteres nem asseguram que qualquer documento com menos de 1024 palavras caiba.</p>
 <h3>Por que aprender</h3>
-<p data-inema-block="modulo-2-2-t3-why">O SDK pode truncar o estado. Na adaptação, calculamos o espaço disponível para cada pergunta e rejeitamos entradas que perderiam tokens. Cortar o final de uma mensagem pode remover justamente a negação, a data ou o pedido principal.</p>
+<p data-inema-block="modulo-2-2-t3-why">O SDK pode truncar o estado. Na adaptaçêo, calculamos o espaço disponível para cada pergunta e rejeitamos entradas que perderiam tokens. Cortar o final de uma mensagem pode remover justamente a negaçêo, a data ou o pedido principal.</p>
 </div>
 <div class="example">
 <strong>Exemplo aplicado</strong>
-<p data-inema-block="modulo-2-2-t3-example">Um histórico longo termina com já recebi o estorno. Se esse trecho for cortado, a decisão pode representar uma situação superada.</p>
+<p data-inema-block="modulo-2-2-t3-example">Um histórico longo termina com já recebi o estorno. Se esse trecho for cortado, a decisêo pode representar uma situaçêo superada.</p>
 </div>
 <aside class="tip bg-primary/10 border-primary/30">
 <h3>Dica prática</h3>
-<p>A relação entre caracteres e tokens varia. A proteção definitiva usa o tokenizer real e o menor espaço disponível entre as quatro perguntas.</p>
+<p>A relaçêo entre caracteres e tokens varia. A proteçêo definitiva usa o tokenizer real e o menor espaço disponível entre as quatro perguntas.</p>
 </aside>
 <div class="codebox">
 <h3>Comando / esquema de referência</h3>
@@ -383,11 +383,11 @@ result = router.predict(
 </div>
 </div>
 <div class="exercise">
-<h3>Teste sua compreensão</h3>
-<p>Por que o limite da interface em caracteres não basta?</p>
+<h3>Teste sua compreensêo</h3>
+<p>Por que o limite da interface em caracteres nêo basta?</p>
 <details>
 <summary>Conferir resposta comentada</summary>
-<p>A relação entre caracteres e tokens varia. A proteção definitiva usa o tokenizer real e o menor espaço disponível entre as quatro perguntas.</p>
+<p>A relaçêo entre caracteres e tokens varia. A proteçêo definitiva usa o tokenizer real e o menor espaço disponível entre as quatro perguntas.</p>
 </details>
 </div>
 <div class="toolbar">
@@ -404,7 +404,7 @@ result = router.predict(
 <h3>O que é</h3>
 <p data-inema-block="modulo-2-2-t4-what">Cada alternativa precisa ter marcadores e texto suficiente para permanecer distinguível. Dezenas de opções consomem o orçamento do cabeçalho. Em classificações grandes, rótulos parecidos podem ficar quase idênticos após cortes. O relatório do projeto usa Banking77 para mostrar esse limite.</p>
 <h3>Por que aprender</h3>
-<p data-inema-block="modulo-2-2-t4-why">Uma alternativa é hierarquia: primeiro escolha uma família e depois uma subcategoria. Isso reduz opções por etapa, mas erros da primeira escolha se propagam. Compare o conjunto completo e mantenha um caminho de revisão para casos entre famílias.</p>
+<p data-inema-block="modulo-2-2-t4-why">Uma alternativa é hierarquia: primeiro escolha uma família e depois uma subcategoria. Isso reduz opções por etapa, mas erros da primeira escolha se propagam. Compare o conjunto completo e mantenha um caminho de revisêo para casos entre famílias.</p>
 </div>
 <div class="example">
 <strong>Exemplo aplicado</strong>
@@ -413,12 +413,12 @@ result = router.predict(
 <div class="comparison">
 <div class="yes bg-emerald-900/20">
 <h3>✓ Aplicar com critério</h3>
-<p>Não. Pode reduzir o espaço do estado e aumentar custo; ainda é necessário medir qualidade, memória e latência com as novas configurações.</p>
+<p>Nêo. Pode reduzir o espaço do estado e aumentar custo; ainda é necessário medir qualidade, memória e latência com as novas configurações.</p>
 </div>
 <div class="no bg-red-900/20">
-<h3>✗ Evitar a conclusão automática</h3>
+<h3>✗ Evitar a conclusêo automática</h3>
 <p>Aumentar head_max_len resolve qualquer número de categorias?</p>
-<p>Não aceite uma resposta só pelo nome do campo ou pela aparência de precisão. Confira a definição e o contexto desta seção.</p>
+<p>Nêo aceite uma resposta só pelo nome do campo ou pela aparência de precisêo. Confira a definiçêo e o contexto desta seçêo.</p>
 </div>
 </div>
 <h3>Conceitos-chave</h3>
@@ -429,23 +429,23 @@ result = router.predict(
 </div>
 <div>
 <strong>Hierarquia</strong>
-<p>etapas de seleção</p>
+<p>etapas de seleçêo</p>
 </div>
 <div>
-<strong>Propagação</strong>
+<strong>Propagaçêo</strong>
 <p>erro encadeado</p>
 </div>
 <div>
-<strong>Descrição</strong>
+<strong>Descriçêo</strong>
 <p>sinal discriminativo</p>
 </div>
 </div>
 <div class="exercise">
-<h3>Teste sua compreensão</h3>
+<h3>Teste sua compreensêo</h3>
 <p>Aumentar head_max_len resolve qualquer número de categorias?</p>
 <details>
 <summary>Conferir resposta comentada</summary>
-<p>Não. Pode reduzir o espaço do estado e aumentar custo; ainda é necessário medir qualidade, memória e latência com as novas configurações.</p>
+<p>Nêo. Pode reduzir o espaço do estado e aumentar custo; ainda é necessário medir qualidade, memória e latência com as novas configurações.</p>
 </details>
 </div>
 <div class="toolbar">
@@ -460,9 +460,9 @@ result = router.predict(
 </div>
 <div class="inema-prose">
 <h3>O que é</h3>
-<p data-inema-block="modulo-2-2-t5-what">O Router padrão mantém poucos modelos quentes e pode descartar o menos recente. Quando duas línguas alternam checkpoints e só um cabe na política de cache, o custo de reconstrução domina a chamada. Preload ou max_loaded maior resolve a troca, desde que a memória comporte os modelos.</p>
+<p data-inema-block="modulo-2-2-t5-what">O Router padrêo mantém poucos modelos quentes e pode descartar o menos recente. Quando duas línguas alternam checkpoints e só um cabe na política de cache, o custo de reconstruçêo domina a chamada. Preload ou max_loaded maior resolve a troca, desde que a memória comporte os modelos.</p>
 <h3>Por que aprender</h3>
-<p data-inema-block="modulo-2-2-t5-why">Medições devem distinguir o caminho quente da primeira carga e das trocas. A aplicação prática evita alternância ao manter apenas multilingual. O lock impede que duas requisições mexam simultaneamente no carregamento e no runtime compartilhado.</p>
+<p data-inema-block="modulo-2-2-t5-why">Medições devem distinguir o caminho quente da primeira carga e das trocas. A aplicaçêo prática evita alternância ao manter apenas multilingual. O lock impede que duas requisições mexam simultaneamente no carregamento e no runtime compartilhado.</p>
 </div>
 <div class="example">
 <strong>Exemplo aplicado</strong>
@@ -470,7 +470,7 @@ result = router.predict(
 </div>
 <aside class="tip bg-primary/10 border-primary/30">
 <h3>Dica prática</h3>
-<p>Não. Cada processo pode carregar sua própria cópia dos pesos. Meça memória e throughput antes de aumentar o número de workers.</p>
+<p>Nêo. Cada processo pode carregar sua própria cópia dos pesos. Meça memória e throughput antes de aumentar o número de workers.</p>
 </aside>
 <h3>Conceitos-chave</h3>
 <div class="concepts">
@@ -492,11 +492,11 @@ result = router.predict(
 </div>
 </div>
 <div class="exercise">
-<h3>Teste sua compreensão</h3>
+<h3>Teste sua compreensêo</h3>
 <p>Mais workers sempre aumentam a capacidade?</p>
 <details>
 <summary>Conferir resposta comentada</summary>
-<p>Não. Cada processo pode carregar sua própria cópia dos pesos. Meça memória e throughput antes de aumentar o número de workers.</p>
+<p>Nêo. Cada processo pode carregar sua própria cópia dos pesos. Meça memória e throughput antes de aumentar o número de workers.</p>
 </details>
 </div>
 <div class="toolbar">
@@ -511,13 +511,13 @@ result = router.predict(
 </div>
 <div class="inema-prose">
 <h3>O que é</h3>
-<p data-inema-block="modulo-2-2-t6-what">Laya agrupa as perguntas de um estado em uma chamada. O laboratório não implementa agregação de vários tickets de usuários diferentes. A latência vista na interface inclui espera, HTTP, carregamento inicial e inferência; runtime.inference_ms informa apenas a etapa medida pelo motor após preparação.</p>
+<p data-inema-block="modulo-2-2-t6-what">Laya agrupa as perguntas de um estado em uma chamada. O laboratório nêo implementa agregaçêo de vários tickets de usuários diferentes. A latência vista na interface inclui espera, HTTP, carregamento inicial e inferência; runtime.inference_ms informa apenas a etapa medida pelo motor após preparaçêo.</p>
 <h3>Por que aprender</h3>
-<p data-inema-block="modulo-2-2-t6-why">Comparar milissegundos sem declarar fronteiras de medição gera conclusões frágeis. Registre número de perguntas e distribuição de comprimento das entradas. Para operação, percentis altos e falhas importam tanto quanto a média; uma amostra pequena não estima bem a cauda.</p>
+<p data-inema-block="modulo-2-2-t6-why">Comparar milissegundos sem declarar fronteiras de mediçêo gera conclusões frágeis. Registre número de perguntas e distribuiçêo de comprimento das entradas. Para operaçêo, percentis altos e falhas importam tanto quanto a média; uma amostra pequena nêo estima bem a cauda.</p>
 </div>
 <div class="example">
 <strong>Exemplo aplicado</strong>
-<p data-inema-block="modulo-2-2-t6-example">Quatro perguntas em um ticket não são quatro clientes atendidos. Throughput de perguntas e throughput de tickets têm denominadores diferentes.</p>
+<p data-inema-block="modulo-2-2-t6-example">Quatro perguntas em um ticket nêo sêo quatro clientes atendidos. Throughput de perguntas e throughput de tickets têm denominadores diferentes.</p>
 </div>
 <h3>Conceitos-chave</h3>
 <div class="concepts">
@@ -539,11 +539,11 @@ result = router.predict(
 </div>
 </div>
 <div class="exercise">
-<h3>Teste sua compreensão</h3>
+<h3>Teste sua compreensêo</h3>
 <p>É correto dividir qualquer latência por quatro e prometer esse tempo por ticket?</p>
 <details>
 <summary>Conferir resposta comentada</summary>
-<p>Não. Dividir pode estimar custo médio por pergunta naquele lote; o usuário espera a conclusão do ticket completo.</p>
+<p>Nêo. Dividir pode estimar custo médio por pergunta naquele lote; o usuário espera a conclusêo do ticket completo.</p>
 </details>
 </div>
 <div class="toolbar">
@@ -554,9 +554,9 @@ result = router.predict(
 <section class="summary">
 <h2>Resumo do módulo</h2>
 <ul>
-<li>Não. A detecção opcional exige o conjunto exato de identificadores de um workflow, e vem desabilitada por padrão.</li>
-<li>A relação entre caracteres e tokens varia. A proteção definitiva usa o tokenizer real e o menor espaço disponível entre as quatro perguntas.</li>
-<li>Não. Cada processo pode carregar sua própria cópia dos pesos. Meça memória e throughput antes de aumentar o número de workers.</li>
+<li>Nêo. A detecçêo opcional exige o conjunto exato de identificadores de um workflow, e vem desabilitada por padrêo.</li>
+<li>A relaçêo entre caracteres e tokens varia. A proteçêo definitiva usa o tokenizer real e o menor espaço disponível entre as quatro perguntas.</li>
+<li>Nêo. Cada processo pode carregar sua própria cópia dos pesos. Meça memória e throughput antes de aumentar o número de workers.</li>
 </ul>
 <p>Selecione um trecho da aula para destacar ou anotar. Dúvidas e notas ficam na sua jornada; exporte o JSON para fazer backup.</p>
 <div class="toolbar">
